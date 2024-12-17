@@ -1,133 +1,54 @@
-import { useState } from "react";
+import React from "react";
+
 import "./App.css";
-import { MenuFoldOutlined, MenuUnfoldOutlined, UploadOutlined, UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
-import { Button, Layout, Menu, theme } from "antd";
 
-const { Header, Sider, Content } = Layout;
-
-const App = () => {
-  const [collapsed, setCollapsed] = useState(false);
-
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
-
+function App() {
   return (
-    <Layout>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical" />
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={["1"]}
-          items={[
-            {
-              key: "1",
-              icon: <UserOutlined />,
-              label: "nav 1",
-            },
-            {
-              key: "2",
-              icon: <VideoCameraOutlined />,
-              label: "nav 2",
-            },
-            {
-              key: "3",
-              icon: <UploadOutlined />,
-              label: "nav 3",
-            },
-          ]}
-        />
-      </Sider>
-      <Layout>
-        <Header
-          style={{
-            padding: 0,
-            background: colorBgContainer,
-          }}
-        >
-          <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: "16px",
-              width: 64,
-              height: 64,
-            }}
-          />
-        </Header>
-        <Content
-          style={{
-            margin: "24px 16px",
-            padding: 24,
-            minHeight: 280,
-            background: colorBgContainer,
-            borderRadius: borderRadiusLG,
-          }}
-        >
+    <>
+      <div className="sidebar_nav_parent"></div>
+      <div className="main_content_parent">
+        <ul>
+          <li>Welcome/All</li>
+          <li>Dev Tools</li>
+          <li>Frontend</li>
           <ul>
-            <li>Welcome/All</li>
-            <li>Dev Tools</li>
-            <li>Frontend</li>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
-              <li></li>
-              <li></li>
-            </ul>
-            <li>Backend</li>
-            <li>Design</li>
-            <ul>
-              <li>UI</li>
-              <li>UX</li>
-              <li>Color</li>
-              <li>Images</li>
-              <li>Icons</li>
-            </ul>
-            <li>Testing</li>
-            <li>Inspiration</li>
-            <li>Resources</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li></li>
+            <li></li>
           </ul>
-        </Content>
-      </Layout>
-    </Layout>
+          <li>Backend</li>
+          <li>Design</li>
+          <ul>
+            <li>UI</li>
+            test
+            <li>UX</li>
+            <li>Color</li>
+            <li>Images + Video</li>
+            <li>Icons</li>
+            <li>Fonts</li>
+          </ul>
+          <li>Testing</li>
+          <li>Inspiration</li>
+          <li>Resources</li>
+        </ul>
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Congue taciti sagittis id; luctus lacus sit tempus natoque. Et habitant nostra at parturient efficitur neque. Consectetur gravida lectus
+        consectetur, et vulputate aenean. Fermentum leo cras mus aenean scelerisque risus ridiculus torquent maecenas. Accumsan mus purus lobortis rhoncus torquent suscipit natoque faucibus. Rutrum
+        ornare ornare augue nascetur ad ultricies. Ex ullamcorper ridiculus vulputate dolor pretium sollicitudin sagittis. Rutrum ligula integer risus habitant montes scelerisque commodo dolor. Class
+        luctus volutpat placerat libero sociosqu lorem. Vehicula tristique ac metus facilisi porttitor. Nullam fermentum dis dapibus netus conubia aliquam sem. Litora taciti turpis vivamus lectus
+        metus himenaeos commodo; quam ante? Aliquam dis felis aptent aenean odio, luctus sem. Neque mattis per odio convallis habitasse volutpat. Morbi turpis neque, non netus nisi suspendisse taciti?
+        Aliquam cras tellus scelerisque magna risus tincidunt nullam? Iaculis gravida purus aliquet; pharetra ligula rhoncus blandit lobortis. Habitant praesent dapibus tellus erat viverra bibendum
+        per. Massa convallis est venenatis a semper et. Suscipit ridiculus scelerisque semper lectus ex; purus erat non. Hac a sed cras gravida curabitur urna cras consectetur cursus. Ultricies
+        volutpat nostra mi pulvinar, pretium aliquet eleifend lectus. Nostra quam taciti pharetra sed lacinia maximus laoreet. Vestibulum tortor litora vulputate inceptos metus, habitant morbi
+        sagittis. Elit luctus convallis parturient vivamus maecenas maecenas iaculis. Erat etiam cursus ut orci habitant cubilia in maecenas. Sagittis nisi lacinia viverra arcu phasellus faucibus dis.
+        Justo natoque fringilla ad gravida bibendum magnis luctus lacinia. Curabitur egestas nisl natoque; molestie conubia suspendisse. Lacinia inceptos fringilla commodo, hendrerit quam dictum
+        imperdiet. Elit auctor mauris magna eleifend natoque nascetur. Turpis mauris etiam aliquet tristique suspendisse tellus metus pharetra? Blandit ligula pharetra libero habitasse feugiat fusce
+        blandit suspendisse. Molestie facilisi duis maximus gravida, ipsum fames turpis aliquet. Potenti sapien semper suscipit sem pharetra ad pellentesque. Facilisis dapibus vel platea sed justo
+        habitasse. Suscipit justo leo ipsum viverra amet est elit. Maximus penatibus cubilia lacus ligula praesent, consectetur ex.
+      </div>
+    </>
   );
-};
+}
 
 export default App;
-
-// // Ant Design
-// import { Col, Row } from "antd";
-
-// // AntDesign
-// import { Button } from "antd";
-
-// function App() {
-//   const [count, setCount] = useState(0);
-
-//   return (
-//     <>
-
-//       {/* <Row style={{ height: "200px", backgroundColor: "#fff6eb" }}>
-//         <Col span={24}></Col>
-//       </Row> */}
-
-//       {/* <Row>
-//         <Col span={18} push={6}>
-//           col-18 col-push-6
-//         </Col>
-//         <Col span={6} pull={18}>
-//           col-6 col-pull-18
-//         </Col>
-//       </Row> */}
-//       {/* <div className="card">
-//         <Button onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
-
-//       </div> */}
-//     </>
-//   );
-// }
-
-// export default App;
