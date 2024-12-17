@@ -16,8 +16,18 @@ body {
   height: 100vh;
   padding: 20px;
   background-color: #fff6eb;
-  color: black;
   box-sizing: border-box;
+
+  .nav_item_parent {
+    color: #693100;
+    padding: 11px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  .nav_item_parent:hover {
+    background-color: #693100;
+    color: #fff6eb;
+  }
 }
 
 .main_content_parent {

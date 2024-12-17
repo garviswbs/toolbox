@@ -5,7 +5,15 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="sidebar_nav_parent"></div>
+      <div className="sidebar_nav_parent">
+        <div className="nav_item_parent ">Welcome</div>
+        <div className="nav_item_parent ">Dev Tools</div>
+        <div className="nav_item_parent ">Front-end</div>
+        <div className="nav_item_parent ">Back-end</div>
+        <div className="nav_item_parent ">Design</div>
+        <div className="nav_item_parent ">Testing</div>
+        <div className="nav_item_parent ">Inspiration</div>
+      </div>
       <div className="main_content_parent">
         <ul>
           <li>Welcome/All</li>
