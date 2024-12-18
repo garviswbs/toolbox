@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../favicon-toolbox.png";
 
 import "./App.css";
 
@@ -6,6 +7,9 @@ function App() {
   return (
     <>
       <div className="sidebar_nav_parent">
+        <div className="nav_logo">
+          <img src={logo} alt="logo" style={{ width: "100%", marginBottom: "20px" }} /> {/* Use the imported image */}
+        </div>
         <div className="nav_item_parent ">Welcome</div>
         <div className="nav_item_parent ">Dev Tools</div>
         <div className="nav_item_parent ">Front-end</div>

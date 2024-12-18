@@ -1,6 +1,6 @@
 {
-  "homepage": "https://garviswbs.github.io/tools",
-  "name": "tools",
+  "homepage": "https://garviswbs.github.io/toolbox",
+  "name": "toolbox",
   "private": true,
   "version": "0.0.0",
   "type": "module",
