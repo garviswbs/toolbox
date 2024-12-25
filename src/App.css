@@ -7,33 +7,93 @@ body {
   margin: 0;
 }
 
-.sidebar_nav_parent {
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+} */
+
+.side_nav_parent {
   position: fixed;
+  padding: 10px;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 225px;
+  width: 75px;
+  /* width: 225px; */
   height: 100vh;
   background-color: #fff6eb;
   box-sizing: border-box;
+  transition: width 0.17s ease-in-out;
+  /* flex */
+}
 
-  .nav_item_parent {
-    color: #693100;
-    padding: 11px;
-    border-radius: 11px;
-    line-height: 16px;
-    cursor: pointer;
+.side_nav_parent:hover {
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.side_nav_content {
+  border: 1px solid rgba(255, 0, 0, 0.147);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+
+  .nav_header {
+    background-color: #f6eadb;
   }
-  .nav_item_parent:hover {
-    background-color: #693100;
-    color: #fff6eb;
+
+  .nav_links {
+    background-color: #f6eadb;
+    border-radius: 5px;
+    color: #693100;
+  }
+  .nav_footer {
+    background-color: #f6eadb;
   }
 }
 
-.nav_title_parent {
+.item-test {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.nav_item_parent {
+  .nav_item {
+    color: #693100;
+    padding: 11px;
+    border-radius: 5px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+
+  .nav_item:hover {
+    background-color: #693100;
+    background-color: #ffe8b3;
+    background-color: #ffb375;
+    /* color: #fff6eb; */
+  }
+}
+
+/* Title Navigation */
+/* .nav_title_parent {
   padding: 20px;
   display: grid;
   grid-template-columns: 50px 1fr;
+  align-items: center;
 
   .nav_logo {
     background-color: white;
@@ -42,15 +102,16 @@ body {
 
   .nav_title {
     margin-left: 10px;
+    /* height: 30px; 
     font-size: 30px;
-    line-height: 30px;
+    line-height: 50px;
     font-weight: 600;
     color: #693100;
   }
-}
+} */
 
 .main_content_parent {
-  margin-left: 225px;
+  margin-left: 50px;
   padding: 20px;
   color: black;
 }

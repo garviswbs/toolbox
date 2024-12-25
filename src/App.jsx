@@ -6,22 +6,46 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="sidebar_nav_parent">
-        <div className="nav_title_parent">
-          <div className="nav_logo">
-            <img src={logo} alt="logo" style={{ width: "100%" }} /> {/* Use the imported image */}
+      <div className="side_nav_parent">
+        <div className="side_nav_content">
+          <div className="nav_header">Test</div>
+          <div className="nav_links">
+            <div className="nav_item ">Welcome</div>
+            <div className="nav_item ">Dev Tools</div>
+            <div className="nav_item ">Front-end</div>
+            <div className="nav_item ">Back-end</div>
+            <div className="nav_item ">Design</div>
+            <div className="nav_item ">Testing</div>
+            <div className="nav_item ">Inspiration</div>
           </div>
-          <div className="nav_title">Toolbox</div>
-        </div>
+          <div className="nav_footer">test3</div>
+          {/* <div className="nav_title_parent">
+            //{" "}
+            <div className="nav_logo">
+              // <img src={logo} alt="logo" style={{ width: "100%" }} />
+              //{" "}
+            </div>
+            // <div className="nav_title">Toolbox</div>
+            //{" "}
+          </div>{" "} */}
 
-        <div className="nav_item_parent ">Welcome</div>
-        <div className="nav_item_parent ">Dev Tools</div>
-        <div className="nav_item_parent ">Front-end</div>
-        <div className="nav_item_parent ">Back-end</div>
-        <div className="nav_item_parent ">Design</div>
-        <div className="nav_item_parent ">Testing</div>
-        <div className="nav_item_parent ">Inspiration</div>
+          {/* <div className="nav_item_parent ">
+            <div className="item-test">TITLE </div>
+            <div className="item-test">
+              <div className="nav_item ">Welcome</div>
+              <div className="nav_item ">Dev Tools</div>
+              <div className="nav_item ">Front-end</div>
+              <div className="nav_item ">Back-end</div>
+              <div className="nav_item ">Design</div>
+              <div className="nav_item ">Testing</div>
+              <div className="nav_item ">Inspiration</div>
+            </div>
+            <div className="item-test">SUBTITLE</div>
+          </div> */}
+        </div>
       </div>
+
+      {/* CONTENT */}
       <div className="main_content_parent">
         <ul>
           <li>Welcome/All</li>
