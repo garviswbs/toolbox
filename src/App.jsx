@@ -8,17 +8,35 @@ function App() {
     <>
       <div className="side_nav_parent">
         <div className="side_nav_content">
-          <div className="nav_header">Test</div>
+          <div className="nav_header">
+            <span class="material-icons-round" style={{ fontSize: "55px", color: "#693100" }}>
+              construction
+            </span>
+          </div>
           <div className="nav_links">
-            <div className="nav_item ">Welcome</div>
-            <div className="nav_item ">Dev Tools</div>
-            <div className="nav_item ">Front-end</div>
+            <div className="nav_item ">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">home</span>
+                {/* <span class="material-symbols-rounded">code</span> */}
+              </div>
+              <div className="nav_item_text">Front-end</div>
+            </div>
+            {/* <div className="nav_item ">Front-end</div>
             <div className="nav_item ">Back-end</div>
             <div className="nav_item ">Design</div>
             <div className="nav_item ">Testing</div>
-            <div className="nav_item ">Inspiration</div>
+            <div className="nav_item ">Inspiration</div> */}
           </div>
-          <div className="nav_footer">test3</div>
+          <div className="footer-links">
+            <div className="footer_item ">
+              <div className="footer_item_icon">
+                <span class="material-icons-round" style={{ fontSize: "35px" }}>
+                  hub
+                </span>
+              </div>
+              <div className="footer_item_text">Github</div>
+            </div>
+          </div>
           {/* <div className="nav_title_parent">
             //{" "}
             <div className="nav_logo">
