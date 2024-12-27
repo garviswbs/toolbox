@@ -50,6 +50,7 @@ body {
 
   .nav_header {
     /* background-color: #f6eadb; */
+    background-color: #fff6eb;
   }
 
   .nav_links {
@@ -57,9 +58,27 @@ body {
     border-radius: 5px;
     color: #693100;
   }
-  .nav_footer {
-    background-color: #f6eadb;
-    text-align: center;
+}
+
+.nav_footer {
+  background-color: #f6eadb;
+  display: flex;
+  color: #693100;
+  overflow: hidden;
+  cursor: pointer;
+
+  .footer_icon {
+    height: 55px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .footer_text {
+    font-size: 16px;
+    /* line-height: 25px; */
+    /* height: 55px; */
+    /* padding: 15px; */
+    /* box-sizing: border-box; */
   }
 }
 

@@ -27,15 +27,13 @@ function App() {
             <div className="nav_item ">Testing</div>
             <div className="nav_item ">Inspiration</div> */}
           </div>
-          <div className="footer-links">
-            <div className="footer_item ">
-              <div className="footer_item_icon">
-                <span class="material-icons-round" style={{ fontSize: "35px" }}>
-                  hub
-                </span>
-              </div>
-              <div className="footer_item_text">Github</div>
+          <div className="nav_footer">
+            <div className="footer_icon">
+              <span class="material-icons-round" style={{ fontSize: "25px" }}>
+                hub
+              </span>
             </div>
+            <div className="footer_text">Github</div>
           </div>
           {/* <div className="nav_title_parent">
             //{" "}
