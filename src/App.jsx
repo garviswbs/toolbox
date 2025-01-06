@@ -7,57 +7,67 @@ function App() {
   return (
     <>
       <div className="side_nav_parent">
+        {/* TITLE - TOP */}
         <div className="side_nav_content">
           <div className="nav_header">
             <span class="material-icons-round" style={{ fontSize: "55px", color: "#693100" }}>
               construction
             </span>
           </div>
-          <div className="nav_links">
+
+          {/* LINKS - MIDDLE */}
+          <div className="nav_links_parent">
+            {/* Home Link */}
             <div className="nav_item ">
               <div className="nav_item_icon">
                 <span class="material-icons-round">home</span>
-                {/* <span class="material-symbols-rounded">code</span> */}
+              </div>
+              <div className="nav_item_text">Home</div>
+            </div>
+            {/* Front-End Link */}
+            <div className="nav_item ">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">code</span>
               </div>
               <div className="nav_item_text">Front-end</div>
             </div>
-            {/* <div className="nav_item ">Front-end</div>
-            <div className="nav_item ">Back-end</div>
-            <div className="nav_item ">Design</div>
-            <div className="nav_item ">Testing</div>
-            <div className="nav_item ">Inspiration</div> */}
+            {/* Back-End Link */}
+            <div className="nav_item ">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">dns</span>
+              </div>
+              <div className="nav_item_text">Back-end</div>
+            </div>
+            {/* Design Link */}
+            <div className="nav_item ">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">color_lens</span>
+              </div>
+              <div className="nav_item_text">Design</div>
+            </div>
+            {/* Testing Link */}
+            <div className="nav_item ">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">bug_report</span>
+              </div>
+              <div className="nav_item_text">Testing</div>
+            </div>
+            {/* Testing Link */}
+            <div className="nav_item ">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">emoji_objects</span>
+              </div>
+              <div className="nav_item_text">Inspiration</div>
+            </div>
           </div>
+
+          {/* Footer - Bottom */}
           <div className="nav_footer">
             <div className="footer_icon">
-              <span class="material-icons-round" style={{ fontSize: "25px" }}>
-                hub
-              </span>
+              <span class="material-icons-round">hub</span>
             </div>
-            <div className="footer_text">Github</div>
+            <div className="footer_text">Connect</div>
           </div>
-          {/* <div className="nav_title_parent">
-            //{" "}
-            <div className="nav_logo">
-              // <img src={logo} alt="logo" style={{ width: "100%" }} />
-              //{" "}
-            </div>
-            // <div className="nav_title">Toolbox</div>
-            //{" "}
-          </div>{" "} */}
-
-          {/* <div className="nav_item_parent ">
-            <div className="item-test">TITLE </div>
-            <div className="item-test">
-              <div className="nav_item ">Welcome</div>
-              <div className="nav_item ">Dev Tools</div>
-              <div className="nav_item ">Front-end</div>
-              <div className="nav_item ">Back-end</div>
-              <div className="nav_item ">Design</div>
-              <div className="nav_item ">Testing</div>
-              <div className="nav_item ">Inspiration</div>
-            </div>
-            <div className="item-test">SUBTITLE</div>
-          </div> */}
         </div>
       </div>
 
