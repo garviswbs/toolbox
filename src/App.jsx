@@ -1,4 +1,5 @@
 import React from "react";
+import githubIcon from "./assets/github-mark.png";
 import logo from "../favicon-toolbox.png";
 
 import "./App.css";
@@ -18,12 +19,12 @@ function App() {
           {/* LINKS - MIDDLE */}
           <div className="nav_links_parent">
             {/* Home Link */}
-            <div className="nav_item ">
+            {/* <div className="nav_item ">
               <div className="nav_item_icon">
                 <span class="material-icons-round">home</span>
               </div>
               <div className="nav_item_text">Home</div>
-            </div>
+            </div> */}
             {/* Front-End Link */}
             <div className="nav_item ">
               <div className="nav_item_icon">
@@ -64,7 +65,8 @@ function App() {
           {/* Footer - Bottom */}
           <div className="nav_footer">
             <div className="footer_icon">
-              <span class="material-icons-round">hub</span>
+              <img src={githubIcon} alt="github" style={{ width: "25px" }} />
+              {/* <span class="material-icons-round">hub</span> */}
             </div>
             <div className="footer_text">Connect</div>
           </div>

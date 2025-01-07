@@ -67,15 +67,18 @@ body {
     cursor: pointer;
     align-items: center;
     border-radius: 5px;
+    opacity: 0.75;
   }
 
   .nav_item:hover {
-    background-color: #693100;
+    /* background-color: #693100; */
+    /* color: #f6eadb; */
+    background-color: #f6eadb;
     display: flex;
-    color: #f6eadb;
     overflow: hidden;
     cursor: pointer;
     align-items: center;
+    opacity: 1;
   }
 
   .nav_item_icon {
@@ -95,26 +98,27 @@ body {
 }
 
 .nav_footer {
-  background-color: #f6eadb;
   display: flex;
   color: #693100;
   overflow: hidden;
   cursor: pointer;
   align-items: center;
+  border-radius: 5px;
+  opacity: 0.75;
 
   .footer_icon {
     height: 55px;
     padding: 15px;
     box-sizing: border-box;
   }
-
   .footer_text {
     font-size: 16px;
-    /* line-height: 25px; */
-    /* height: 55px; */
-    /* padding: 15px; */
-    /* box-sizing: border-box; */
   }
+}
+
+.nav_footer:hover {
+  background-color: #f6eadb;
+  opacity: 1;
 }
 
 /* Set all nav icon width */
