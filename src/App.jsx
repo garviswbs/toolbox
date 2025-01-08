@@ -1,12 +1,14 @@
 import React from "react";
+// React Router
+import { BrowserRouter, Routes, Route } from "react-router";
+// Assets
 import githubIcon from "./assets/github-mark.png";
-import logo from "../favicon-toolbox.png";
 
 import "./App.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <div className="side_nav_parent">
         {/* TITLE - TOP */}
         <div className="side_nav_content">
@@ -19,12 +21,12 @@ function App() {
           {/* LINKS - MIDDLE */}
           <div className="nav_links_parent">
             {/* Home Link */}
-            {/* <div className="nav_item ">
+            <div className="nav_item ">
               <div className="nav_item_icon">
                 <span class="material-icons-round">home</span>
               </div>
               <div className="nav_item_text">Home</div>
-            </div> */}
+            </div>
             {/* Front-End Link */}
             <div className="nav_item ">
               <div className="nav_item_icon">
@@ -144,7 +146,7 @@ function App() {
           </li>
         </ul>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
