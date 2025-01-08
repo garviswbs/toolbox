@@ -1,6 +1,13 @@
 import React from "react";
+// Pages
+import Home from "./pages/Home.jsx";
+import FrontEnd from "./pages/FrontEnd.jsx";
+import BackEnd from "./pages/BackEnd.jsx";
+import Design from "./pages/Design.jsx";
+import Testing from "./pages/Testing.jsx";
+import Inspiration from "./pages/Inspiration.jsx";
 // React Router
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router";
 // Assets
 import githubIcon from "./assets/github-mark.png";
 
@@ -8,60 +15,73 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/toolbox/">
       <div className="side_nav_parent">
-        {/* TITLE - TOP */}
+        {/* TITLE & Site Icon- TOP */}
         <div className="side_nav_content">
-          <div className="nav_header">
-            <span class="material-icons-round" style={{ fontSize: "55px", color: "#693100" }}>
-              construction
-            </span>
-          </div>
+          <NavLink to="/">
+            <div className="nav_header">
+              <span class="material-icons-round" style={{ fontSize: "55px", color: "#693100" }}>
+                construction
+              </span>
+            </div>
+          </NavLink>
 
           {/* LINKS - MIDDLE */}
           <div className="nav_links_parent">
             {/* Home Link */}
-            <div className="nav_item ">
+            {/* <div className="nav_item ">
               <div className="nav_item_icon">
                 <span class="material-icons-round">home</span>
               </div>
               <div className="nav_item_text">Home</div>
-            </div>
+            </div> */}
             {/* Front-End Link */}
-            <div className="nav_item ">
-              <div className="nav_item_icon">
-                <span class="material-icons-round">code</span>
+            <NavLink to="/front-end">
+              <div className="nav_item ">
+                <div className="nav_item_icon">
+                  <span class="material-icons-round">code</span>
+                </div>
+                <div className="nav_item_text">Front-end</div>
               </div>
-              <div className="nav_item_text">Front-end</div>
-            </div>
+            </NavLink>
+
             {/* Back-End Link */}
-            <div className="nav_item ">
-              <div className="nav_item_icon">
-                <span class="material-icons-round">dns</span>
+            <NavLink to="/back-end">
+              <div className="nav_item ">
+                <div className="nav_item_icon">
+                  <span class="material-icons-round">dns</span>
+                </div>
+                <div className="nav_item_text">Back-end</div>
               </div>
-              <div className="nav_item_text">Back-end</div>
-            </div>
+            </NavLink>
             {/* Design Link */}
-            <div className="nav_item ">
-              <div className="nav_item_icon">
-                <span class="material-icons-round">color_lens</span>
+            <NavLink to="/design">
+              <div className="nav_item ">
+                <div className="nav_item_icon">
+                  <span class="material-icons-round">color_lens</span>
+                </div>
+                <div className="nav_item_text">Design</div>
               </div>
-              <div className="nav_item_text">Design</div>
-            </div>
+            </NavLink>
             {/* Testing Link */}
-            <div className="nav_item ">
-              <div className="nav_item_icon">
-                <span class="material-icons-round">bug_report</span>
+            <NavLink to="/testing">
+              <div className="nav_item ">
+                <div className="nav_item_icon">
+                  <span class="material-icons-round">bug_report</span>
+                </div>
+                <div className="nav_item_text">Testing</div>
               </div>
-              <div className="nav_item_text">Testing</div>
-            </div>
+            </NavLink>
             {/* Testing Link */}
-            <div className="nav_item ">
-              <div className="nav_item_icon">
-                <span class="material-icons-round">emoji_objects</span>
+            <NavLink to="/inspiration">
+              <div className="nav_item ">
+                <div className="nav_item_icon">
+                  <span class="material-icons-round">emoji_objects</span>
+                </div>
+                <div className="nav_item_text">Inspiration</div>
               </div>
-              <div className="nav_item_text">Inspiration</div>
-            </div>
+            </NavLink>
           </div>
 
           {/* Footer - Bottom */}
@@ -76,7 +96,7 @@ function App() {
       </div>
 
       {/* CONTENT */}
-      <div className="main_content_parent">
+      {/* <div className="main_content_parent">
         <ul>
           <li>Welcome/All</li>
           <li>Dev Tools</li>
@@ -145,7 +165,15 @@ function App() {
             pellentesque. Facilisis dapibus vel platea sed justo habitasse. Suscipit justo leo ipsum viverra amet est elit. Maximus penatibus cubilia lacus ligula praesent, consectetur ex.
           </li>
         </ul>
-      </div>
+      </div> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/front-end" element={<FrontEnd />} />
+        <Route path="/back-end" element={<BackEnd />} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/testing" element={<Testing />} />
+        <Route path="/inspiration" element={<Inspiration />} />
+      </Routes>
     </BrowserRouter>
   );
 }
