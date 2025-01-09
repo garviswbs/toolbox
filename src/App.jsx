@@ -166,14 +166,16 @@ function App() {
           </li>
         </ul>
       </div> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/front-end" element={<FrontEnd />} />
-        <Route path="/back-end" element={<BackEnd />} />
-        <Route path="/design" element={<Design />} />
-        <Route path="/testing" element={<Testing />} />
-        <Route path="/inspiration" element={<Inspiration />} />
-      </Routes>
+      <div className="main_content_parent">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/front-end" element={<FrontEnd />} />
+          <Route path="/back-end" element={<BackEnd />} />
+          <Route path="/design" element={<Design />} />
+          <Route path="/testing" element={<Testing />} />
+          <Route path="/inspiration" element={<Inspiration />} />
+        </Routes>
+      </div>
     </HashRouter>
   );
 }
