@@ -7,7 +7,7 @@ import Design from "./pages/Design.jsx";
 import Testing from "./pages/Testing.jsx";
 import Inspiration from "./pages/Inspiration.jsx";
 // React Router
-import { BrowserRouter, Routes, Route, NavLink } from "react-router";
+import { HashRouter, Routes, Route, NavLink } from "react-router";
 // Assets
 import githubIcon from "./assets/github-mark.png";
 
@@ -15,7 +15,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/toolbox/">
+    <HashRouter>
       <div className="side_nav_parent">
         {/* TITLE & Site Icon- TOP */}
         <div className="side_nav_content">
@@ -174,7 +174,7 @@ function App() {
         <Route path="/testing" element={<Testing />} />
         <Route path="/inspiration" element={<Inspiration />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
