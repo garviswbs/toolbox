@@ -1,4 +1,4 @@
-import "./subpage.css";
+// import "./subpage.css";
 
 function Home() {
   return (

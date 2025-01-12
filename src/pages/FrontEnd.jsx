@@ -1,4 +1,8 @@
+// Ant Design
 import { Col, Row } from "antd";
+
+// Card Component
+import Card from "./Card.jsx";
 
 function FrontEnd() {
   return (
@@ -10,13 +14,19 @@ function FrontEnd() {
       <div className="subnav_parent">test</div>
       <p>
         <Row gutter={[20, 20]}>
+          <Card />
           <Col xs={24} sm={12} md={8} lg={6} xl={4}>
             <div className="card_parent">
-              <div style={{ backgroundColor: "white" }}>
+              <div style={{ alignSelf: "end", margin: 0 }}>
                 <h4>Title Here</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <a href="#" className="website_link">
+                  Website
+                </a>
+                <a href="#" className="sample_link">
+                  Sample
+                </a>
               </div>
-              <div style={{ backgroundColor: "tan" }}>test</div>
             </div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={6} xl={4}>

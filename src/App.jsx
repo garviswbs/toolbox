@@ -6,12 +6,14 @@ import BackEnd from "./pages/BackEnd.jsx";
 import Design from "./pages/Design.jsx";
 import Testing from "./pages/Testing.jsx";
 import Inspiration from "./pages/Inspiration.jsx";
+
 // React Router
 import { HashRouter, Routes, Route, NavLink } from "react-router";
 // Assets
 import githubIcon from "./assets/github-mark.png";
 
 import "./App.css";
+import "./pages/subpage.css";
 
 function App() {
   return (
