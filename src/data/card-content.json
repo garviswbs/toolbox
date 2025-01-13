@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Title Here",
+    "page": "Frontend",
+    "category": "React",
+    "icon": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "websiteLink": "",
+    "sampleLink": ""
+  },
+  {
+    "title": "Title Here",
+    "page": "Frontend",
+    "category": "React",
+    "icon": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "websiteLink": "",
+    "sampleLink": ""
+  }
+]

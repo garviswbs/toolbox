@@ -11,7 +11,7 @@ function Card() {
             Website
           </a>
           <a href="#" className="sample_link">
-            Sample
+            Sample3
           </a>
         </div>
       </div>
