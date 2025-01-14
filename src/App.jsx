@@ -39,7 +39,7 @@ function App() {
               <div className="nav_item_text">Home</div>
             </div> */}
             {/* Front-End Link */}
-            <NavLink to="/front-end">
+            <NavLink style={{ textDecoration: "none" }} to="/front-end">
               <div className="nav_item ">
                 <div className="nav_item_icon">
                   <span class="material-icons-round">code</span>
@@ -49,7 +49,7 @@ function App() {
             </NavLink>
 
             {/* Back-End Link */}
-            <NavLink to="/back-end">
+            <NavLink style={{ textDecoration: "none" }} to="/back-end">
               <div className="nav_item ">
                 <div className="nav_item_icon">
                   <span class="material-icons-round">dns</span>
@@ -58,7 +58,7 @@ function App() {
               </div>
             </NavLink>
             {/* Design Link */}
-            <NavLink to="/design">
+            <NavLink style={{ textDecoration: "none" }} to="/design">
               <div className="nav_item ">
                 <div className="nav_item_icon">
                   <span class="material-icons-round">color_lens</span>
@@ -67,7 +67,7 @@ function App() {
               </div>
             </NavLink>
             {/* Testing Link */}
-            <NavLink to="/testing">
+            <NavLink style={{ textDecoration: "none" }} to="/testing">
               <div className="nav_item ">
                 <div className="nav_item_icon">
                   <span class="material-icons-round">bug_report</span>
@@ -76,7 +76,7 @@ function App() {
               </div>
             </NavLink>
             {/* Testing Link */}
-            <NavLink to="/inspiration">
+            <NavLink style={{ textDecoration: "none" }} to="/inspiration">
               <div className="nav_item ">
                 <div className="nav_item_icon">
                   <span class="material-icons-round">emoji_objects</span>
@@ -87,13 +87,15 @@ function App() {
           </div>
 
           {/* Footer - Bottom */}
-          <div className="nav_footer">
-            <div className="footer_icon">
-              <img src={githubIcon} alt="github" style={{ width: "25px" }} />
-              {/* <span class="material-icons-round">hub</span> */}
+          <a href="https://github.com/garviswbs" target="_blank" style={{ textDecoration: "none" }}>
+            <div className="nav_footer">
+              <div className="footer_icon">
+                <img src={githubIcon} alt="github" style={{ width: "25px" }} />
+                {/* <span class="material-icons-round">hub</span> */}
+              </div>
+              <div className="footer_text">GitHub</div>
             </div>
-            <div className="footer_text">GitHub</div>
-          </div>
+          </a>
         </div>
       </div>
 

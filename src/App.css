@@ -122,6 +122,6 @@ body {
 /* Main content */
 .main_content_parent {
   margin-left: 75px;
-  padding: 20px;
-  color: black;
+  /* padding: 20px; */
+  color: #693100;
 }

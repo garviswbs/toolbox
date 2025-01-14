@@ -1,5 +1,6 @@
 // Ant Design
-import { Col, Row } from "antd";
+import { Row } from "antd";
+import { Button, Flex } from "antd";
 
 // Card Component
 import Card from "./Card.jsx";
@@ -8,71 +9,57 @@ function FrontEnd() {
   return (
     <div>
       <div className="banner_parent">
-        <h1>Front-end </h1>
-        <p> Welcome to the Home Page</p>
+        <div className="banner_content">
+          <h1 className="page_title">FRONT-END</h1>
+
+          <p style={{ width: "50%" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </div>
-      <div className="subnav_parent">test</div>
-      <p>
+
+      {/* Sub Nav */}
+      <div className="subnav_parent">
+        <Flex gap="small" wrap>
+          <Button>HTML</Button>
+          <Button>CSS</Button>
+          <Button>Javascript</Button>
+          <Button>Default Button</Button>
+        </Flex>
+      </div>
+
+      {/* Content */}
+      <div style={{ padding: "20px" }}>
+        <h1 className="section_title">HTML</h1>
         <Row gutter={[20, 20]}>
           <Card />
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">
-              <div style={{ alignSelf: "end", margin: 0 }}>
-                <h4>Title Here</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#" className="website_link">
-                  Website
-                </a>
-                <a href="#" className="sample_link">
-                  Sample
-                </a>
-              </div>
-            </div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
-          <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-            <div className="card_parent">test test test test</div>
-          </Col>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </Row>
-      </p>
+      </div>
     </div>
   );
 }
