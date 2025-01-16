@@ -23,7 +23,7 @@ function FrontEnd() {
       {/* Sub Nav */}
       <div className="subnav_parent">
         <Flex gap="small" wrap>
-          <Button>HTML</Button>
+          <Button href="./#html">HTML</Button>
           <Button>CSS</Button>
           <Button>Javascript</Button>
           <Button>Default Button</Button>
@@ -32,7 +32,9 @@ function FrontEnd() {
 
       {/* Content */}
       <div style={{ padding: "20px" }}>
-        <h1 className="section_title">HTML</h1>
+        <h1 className="section_title" id="html">
+          HTML
+        </h1>
         <Row gutter={[20, 20]}>
           <Card />
           <Card />

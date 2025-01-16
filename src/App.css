@@ -51,6 +51,7 @@ body {
 
   .nav_item {
     /* background-color: #f6eadb; */
+    text-decoration: none;
     display: flex;
     color: #693100;
     overflow: hidden;
@@ -58,6 +59,16 @@ body {
     align-items: center;
     border-radius: 5px;
     opacity: 0.75;
+  }
+
+  .nav_item.active {
+    background-color: #693100;
+    color: #fff6eb;
+    opacity: 1;
+  }
+  .nav_item.active:hover {
+    background-color: #693100;
+    color: #fff6eb;
   }
 
   .nav_item:hover {

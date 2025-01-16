@@ -39,50 +39,40 @@ function App() {
               <div className="nav_item_text">Home</div>
             </div> */}
             {/* Front-End Link */}
-            <NavLink style={{ textDecoration: "none" }} to="/front-end">
-              <div className="nav_item ">
-                <div className="nav_item_icon">
-                  <span class="material-icons-round">code</span>
-                </div>
-                <div className="nav_item_text">Front-end</div>
+            <NavLink className={"nav_item"} to="/front-end">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">code</span>
               </div>
+              <div className="nav_item_text">Front-end</div>
             </NavLink>
 
             {/* Back-End Link */}
-            <NavLink style={{ textDecoration: "none" }} to="/back-end">
-              <div className="nav_item ">
-                <div className="nav_item_icon">
-                  <span class="material-icons-round">dns</span>
-                </div>
-                <div className="nav_item_text">Back-end</div>
+            <NavLink className={"nav_item"} to="/back-end">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">dns</span>
               </div>
+              <div className="nav_item_text">Back-end</div>
             </NavLink>
             {/* Design Link */}
-            <NavLink style={{ textDecoration: "none" }} to="/design">
-              <div className="nav_item ">
-                <div className="nav_item_icon">
-                  <span class="material-icons-round">color_lens</span>
-                </div>
-                <div className="nav_item_text">Design</div>
+            <NavLink className={"nav_item"} to="/design">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">color_lens</span>
               </div>
+              <div className="nav_item_text">Design</div>
             </NavLink>
             {/* Testing Link */}
-            <NavLink style={{ textDecoration: "none" }} to="/testing">
-              <div className="nav_item ">
-                <div className="nav_item_icon">
-                  <span class="material-icons-round">bug_report</span>
-                </div>
-                <div className="nav_item_text">Testing</div>
+            <NavLink className={"nav_item"} to="/testing">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">bug_report</span>
               </div>
+              <div className="nav_item_text">Testing</div>
             </NavLink>
             {/* Testing Link */}
-            <NavLink style={{ textDecoration: "none" }} to="/inspiration">
-              <div className="nav_item ">
-                <div className="nav_item_icon">
-                  <span class="material-icons-round">emoji_objects</span>
-                </div>
-                <div className="nav_item_text">Inspiration</div>
+            <NavLink className={"nav_item"} to="/inspiration">
+              <div className="nav_item_icon">
+                <span class="material-icons-round">emoji_objects</span>
               </div>
+              <div className="nav_item_text">Inspiration</div>
             </NavLink>
           </div>
 
@@ -173,11 +163,11 @@ function App() {
       <div className="main_content_parent">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/front-end" element={<FrontEnd />} />
-          <Route path="/back-end" element={<BackEnd />} />
-          <Route path="/design" element={<Design />} />
-          <Route path="/testing" element={<Testing />} />
-          <Route path="/inspiration" element={<Inspiration />} />
+          <Route path="/front-end/*" element={<FrontEnd />} />
+          <Route path="/back-end/*" element={<BackEnd />} />
+          <Route path="/design/*" element={<Design />} />
+          <Route path="/testing/*" element={<Testing />} />
+          <Route path="/inspiration/*" element={<Inspiration />} />
         </Routes>
       </div>
     </HashRouter>
