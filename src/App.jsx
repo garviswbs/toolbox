@@ -6,6 +6,7 @@ import BackEnd from "./pages/BackEnd.jsx";
 import Design from "./pages/Design.jsx";
 import Testing from "./pages/Testing.jsx";
 import Inspiration from "./pages/Inspiration.jsx";
+import Info from "./pages/Info.jsx";
 
 // React Router
 import { HashRouter, Routes, Route, NavLink } from "react-router";
@@ -77,15 +78,21 @@ function App() {
           </div>
 
           {/* Footer - Bottom */}
-          <a href="https://github.com/garviswbs" target="_blank" style={{ textDecoration: "none" }}>
+          {/* <a href="https://github.com/garviswbs" target="_blank" style={{ textDecoration: "none" }}>
             <div className="nav_footer">
               <div className="footer_icon">
                 <img src={githubIcon} alt="github" style={{ width: "25px" }} />
-                {/* <span class="material-icons-round">hub</span> */}
               </div>
               <div className="footer_text">GitHub</div>
             </div>
-          </a>
+          </a> */}
+          {/* Testing Link */}
+          <NavLink className={"nav_item"} to="/info">
+            <div className="nav_item_icon">
+              <span class="material-icons-round">info</span>
+            </div>
+            <div className="nav_item_text">Info</div>
+          </NavLink>
         </div>
       </div>
 
@@ -168,6 +175,7 @@ function App() {
           <Route path="/design/*" element={<Design />} />
           <Route path="/testing/*" element={<Testing />} />
           <Route path="/inspiration/*" element={<Inspiration />} />
+          <Route path="/info/*" element={<Info />} />
         </Routes>
       </div>
     </HashRouter>
