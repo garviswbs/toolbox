@@ -1,0 +1,25 @@
+.color_box_parent {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  /* grid-template-rows: 75px; */
+  grid-auto-flow: row;
+  margin-bottom: 10px;
+  cursor: copy;
+  max-width: 300px;
+  transition: transform 0.2s;
+}
+
+.color_box_parent:hover {
+  transform: scale(1.02);
+}
+
+.color_box {
+  aspect-ratio: 1 / 1;
+  border: 3px solid #693100;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.color_description {
+  align-self: center;
+}

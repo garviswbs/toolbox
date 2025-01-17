@@ -10,19 +10,22 @@ function FrontEnd() {
     <div>
       <div className="banner_parent">
         <div className="banner_content">
-          <h1 className="page_title">FRONT-END</h1>
-
-          <p style={{ width: "50%" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <div>
+            <h1 className="page_title">FRONT-END</h1>
+          </div>
+          <div>
+            <p style={{ paddingLeft: "30%" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Sub Nav */}
       <div className="subnav_parent">
-        <Flex gap="small" wrap>
+        <Flex gap="small" wrap justify="flex-end">
           <Button href="./#html">HTML</Button>
           <Button>CSS</Button>
           <Button>Javascript</Button>
