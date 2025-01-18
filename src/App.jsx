@@ -24,7 +24,7 @@ function App() {
         <div className="side_nav_content">
           <NavLink to="/">
             <div className="nav_header">
-              <span class="material-icons-round" style={{ fontSize: "55px", color: "#693100" }}>
+              <span className="material-icons-round" style={{ fontSize: "55px", color: "#693100" }}>
                 construction
               </span>
             </div>
@@ -35,14 +35,14 @@ function App() {
             {/* Home Link */}
             {/* <div className="nav_item ">
               <div className="nav_item_icon">
-                <span class="material-icons-round">home</span>
+                <span className="material-icons-round">home</span>
               </div>
               <div className="nav_item_text">Home</div>
             </div> */}
             {/* Front-End Link */}
             <NavLink className={"nav_item"} to="/front-end">
               <div className="nav_item_icon">
-                <span class="material-icons-round">code</span>
+                <span className="material-icons-round">code</span>
               </div>
               <div className="nav_item_text">Front-end</div>
             </NavLink>
@@ -50,28 +50,28 @@ function App() {
             {/* Back-End Link */}
             <NavLink className={"nav_item"} to="/back-end">
               <div className="nav_item_icon">
-                <span class="material-icons-round">dns</span>
+                <span className="material-icons-round">dns</span>
               </div>
               <div className="nav_item_text">Back-end</div>
             </NavLink>
             {/* Design Link */}
             <NavLink className={"nav_item"} to="/design">
               <div className="nav_item_icon">
-                <span class="material-icons-round">color_lens</span>
+                <span className="material-icons-round">color_lens</span>
               </div>
               <div className="nav_item_text">Design</div>
             </NavLink>
             {/* Testing Link */}
             <NavLink className={"nav_item"} to="/testing">
               <div className="nav_item_icon">
-                <span class="material-icons-round">bug_report</span>
+                <span className="material-icons-round">bug_report</span>
               </div>
               <div className="nav_item_text">Testing</div>
             </NavLink>
             {/* Testing Link */}
             <NavLink className={"nav_item"} to="/inspiration">
               <div className="nav_item_icon">
-                <span class="material-icons-round">emoji_objects</span>
+                <span className="material-icons-round">emoji_objects</span>
               </div>
               <div className="nav_item_text">Inspiration</div>
             </NavLink>
@@ -89,7 +89,7 @@ function App() {
           {/* Testing Link */}
           <NavLink className={"nav_item"} to="/info">
             <div className="nav_item_icon">
-              <span class="material-icons-round">info</span>
+              <span className="material-icons-round">info</span>
             </div>
             <div className="nav_item_text">Info</div>
           </NavLink>

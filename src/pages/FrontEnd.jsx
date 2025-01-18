@@ -1,43 +1,48 @@
 // Ant Design
-import { Row } from "antd";
-import { Button, Flex } from "antd";
+import { Row, Col } from "antd";
+// import { Button, Flex } from "antd";
+// import { Tabs } from "antd";
 
 // Card Component
 import Card from "./Card.jsx";
 
 function FrontEnd() {
   return (
-    <div>
+    <>
+      {/* <div className="banner_parent">
+        <Tabs defaultActiveKey="1" size="large" items={items} onChange={onChange}  />
+      </div> */}
       <div className="banner_parent">
-        <div className="banner_content">
-          <div>
-            <h1 className="page_title">FRONT-END</h1>
-          </div>
-          <div>
-            <p style={{ paddingLeft: "30%" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+        <Row gutter={[20, 0]} align={"middle"}>
+          <Col xs={24} sm={24} md={24} lg={9} xl={8}>
+            <div className="page_title">FRONT-END</div>
+          </Col>
+          <Col xs={24} sm={24} md={24} lg={15} xl={16}>
+            <div className="subnav_parent">
+              <div className="subnav_item">HTML</div>
+              <div className="subnav_item">CSS</div>
+              <div className="subnav_item">JavaScript</div>
+              <div className="subnav_item">Test</div>
+            </div>
+          </Col>
+        </Row>
       </div>
 
       {/* Sub Nav */}
-      <div className="subnav_parent">
+      {/* <div className="subnav_parent">
         <Flex gap="small" wrap justify="flex-end">
           <Button href="./#html">HTML</Button>
           <Button>CSS</Button>
           <Button>Javascript</Button>
           <Button>Default Button</Button>
         </Flex>
-      </div>
+      </div> */}
 
       {/* Content */}
       <div style={{ padding: "20px" }}>
-        <h1 className="section_title" id="html">
+        {/* <h1 className="section_title" id="html">
           HTML
-        </h1>
+        </h1> */}
         <Row gutter={[20, 20]}>
           <Card />
           <Card />
@@ -65,7 +70,7 @@ function FrontEnd() {
           <Card />
         </Row>
       </div>
-    </div>
+    </>
   );
 }
 
