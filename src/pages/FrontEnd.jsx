@@ -1,5 +1,5 @@
 // Ant Design
-import { Row, Col } from "antd";
+import { Grid, Row, Col } from "antd";
 // import { Button, Flex } from "antd";
 // import { Tabs } from "antd";
 
@@ -9,25 +9,28 @@ import Card from "./Card.jsx";
 function FrontEnd() {
   return (
     <>
-      {/* <div className="banner_parent">
-        <Tabs defaultActiveKey="1" size="large" items={items} onChange={onChange}  />
-      </div> */}
+      {/* Banner */}
       <div className="banner_parent">
-        <Row gutter={[20, 0]} align={"middle"}>
-          <Col xs={24} sm={24} md={24} lg={9} xl={8}>
-            <h1 className="page_title">FRONT-END</h1>
+        <Row gutter={[20, 0]} style={{ minHeight: "75px" }}>
+          <Col xs={24} sm={24} md={24} lg={9} xl={8} className="page_title_parent">
+            <h1>Front-end</h1>
           </Col>
-          <Col xs={24} sm={24} md={24} lg={15} xl={16}>
-            <div className="subnav_parent">
-              <div className="subnav_item">HTML</div>
-              <div className="subnav_item">CSS</div>
-              <div className="subnav_item">JavaScript</div>
-              <div className="subnav_item">Test</div>
+          <Col xs={24} sm={24} md={24} lg={15} xl={16} className="subnav_parent">
+            <div className="subnav_item">
+              <p>HTML</p>
+            </div>
+            <div className="subnav_item">
+              <p>CSS</p>
+            </div>
+            <div className="subnav_item">
+              <p>JavaScript</p>
+            </div>
+            <div className="subnav_item">
+              <p>Test</p>
             </div>
           </Col>
         </Row>
       </div>
-
       {/* Sub Nav */}
       {/* <div className="subnav_parent">
         <Flex gap="small" wrap justify="flex-end">

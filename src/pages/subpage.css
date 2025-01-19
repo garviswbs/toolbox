@@ -2,48 +2,40 @@
   position: sticky;
   top: 0;
   padding: 0 20px;
-  /* min-height: 75px; */
   box-sizing: border-box;
-  /* padding: 0 20px;*/
   border-bottom: 0.5px solid #69310033;
-  background-color: #f6eadb;
+  /* background-color: #f6eadb; */
   z-index: 1000;
   background-image: url("../assets/banners/BG-texture-1.png");
+  /* background-blend-mode: lighten; */
 }
 
-.page_title {
-  /* background-color: rgb(90, 90, 90); */
-  /* font-size: 55px;
-  line-height: 48px;
-  margin-top: -6px; */
-  color: #693100;
+.page_title_parent {
   text-transform: uppercase;
-  transform: translateY(-2px);
-  margin: 10px 0;
+  /* transform: translateY(-2px); */
+  display: flex;
+  align-items: center;
+  /* background-color: white; */
 }
 
 .subnav_parent {
-  color: #693100;
-  text-align: right;
+  display: flex;
+  /* background-color: rgba(255, 255, 255, 0.574); */
+  justify-content: end;
+  column-gap: 20px;
 }
 
 .subnav_item {
-  /* background-color: rgb(66, 128, 128); */
-  display: inline-block;
-  /* flex-grow: 1; */
-  /* padding: 20px; */
-  padding: 10px 20px;
+  /* background-color: rgba(66, 128, 128, 0.205); */
   cursor: pointer;
-  height: 75px;
-  box-sizing: border-box;
+  display: grid;
+  align-items: center;
 
-  /* padding: 20px; */
+  border: 2px solid transparent;
 }
 
 .subnav_item:hover {
-  /* background-color: #693100;
-  color: white; */
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid #693100;
 }
 
 .section_title {
