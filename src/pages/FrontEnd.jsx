@@ -15,7 +15,7 @@ function FrontEnd() {
       <div className="banner_parent">
         <Row gutter={[20, 0]} align={"middle"}>
           <Col xs={24} sm={24} md={24} lg={9} xl={8}>
-            <div className="page_title">FRONT-END</div>
+            <h1 className="page_title">FRONT-END</h1>
           </Col>
           <Col xs={24} sm={24} md={24} lg={15} xl={16}>
             <div className="subnav_parent">
