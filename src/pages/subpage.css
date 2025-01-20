@@ -3,11 +3,14 @@
   top: 0;
   padding: 0 20px;
   box-sizing: border-box;
-  border-bottom: 0.5px solid #69310033;
+  border-bottom: 0.5px solid #69310020;
   /* background-color: #f6eadb; */
   z-index: 1000;
-  background-image: url("../assets/banners/BG-texture-1.png");
   /* background-blend-mode: lighten; */
+  background: rgba(246, 234, 219, 0.75);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-image: url("../assets/banners/BG-texture-6-opacity-44.png");
 }
 
 .page_title_parent {
@@ -22,7 +25,7 @@
   display: flex;
   /* background-color: rgba(255, 255, 255, 0.574); */
   justify-content: end;
-  column-gap: 20px;
+  column-gap: 30px;
 }
 
 .subnav_item {
