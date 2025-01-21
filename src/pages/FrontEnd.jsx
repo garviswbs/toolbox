@@ -1,7 +1,5 @@
 // Ant Design
-import { Grid, Row, Col } from "antd";
-// import { Button, Flex } from "antd";
-// import { Tabs } from "antd";
+import { Row, Col } from "antd";
 
 // Card Component
 import Card from "./Card.jsx";
@@ -31,16 +29,6 @@ function FrontEnd() {
           </Col>
         </Row>
       </div>
-      {/* Sub Nav */}
-      {/* <div className="subnav_parent">
-        <Flex gap="small" wrap justify="flex-end">
-          <Button href="./#html">HTML</Button>
-          <Button>CSS</Button>
-          <Button>Javascript</Button>
-          <Button>Default Button</Button>
-        </Flex>
-      </div> */}
-
       {/* Content */}
       <div style={{ padding: "20px" }}>
         {/* <h1 className="section_title" id="html">
