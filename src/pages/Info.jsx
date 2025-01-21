@@ -1,5 +1,5 @@
 // Ant Design
-import { Tooltip } from "antd";
+import { Row, Col, Tooltip } from "antd";
 
 // Css
 import "./Info.css";
@@ -7,17 +7,33 @@ import "./Info.css";
 function Info() {
   return (
     <>
+      {/* Banner */}
       <div className="banner_parent">
-        <div className="banner_content">
-          <h1 className="page_title">Info</h1>
-
-          <p style={{ width: "50%", float: "right" }}>
-            <strong>Toolbox</strong> is a project that aims to provide a collection of resources for developers and designers. The UI has been designed to mimick an integration dashboard with pages,
-            subpages, and cards. The project is built using React, Vite, React Router, Material Symbols, styled-components, and Ant Design layout components. Each tile includes a link to the resource
-            website. If applicable, a link to a personal sample page is also included.
-          </p>
-        </div>
+        <Row gutter={[20, 0]} style={{ minHeight: "75px" }}>
+          <Col xs={24} sm={24} md={24} lg={9} xl={8} className="page_title_parent">
+            <h1>Project Info</h1>
+          </Col>
+          <Col xs={24} sm={24} md={24} lg={15} xl={16} className="subnav_parent">
+            <div className="subnav_item">
+              <p>HTML</p>
+            </div>
+            <div className="subnav_item">
+              <p>CSS</p>
+            </div>
+            <div className="subnav_item">
+              <p>JavaScript</p>
+            </div>
+            <div className="subnav_item">
+              <p>Test</p>
+            </div>
+          </Col>
+        </Row>
       </div>
+      <p style={{ width: "50%", float: "right" }}>
+        <strong>Toolbox</strong> is a project that aims to provide a collection of resources for developers and designers. The UI has been designed to mimick an integration dashboard with pages,
+        subpages, and cards. The project is built using React, Vite, React Router, Material Symbols, styled-components, and Ant Design layout components. Each tile includes a link to the resource
+        website. If applicable, a link to a personal sample page is also included.
+      </p>
       {/* Page Content */}
       <div className="section_parent">
         <h1 className="section_title" style={{ marginBottom: "10px" }}>
