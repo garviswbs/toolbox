@@ -28,6 +28,12 @@
   column-gap: 30px;
 }
 
+@media only screen and (max-width: 991.5px) {
+  .subnav_parent {
+    justify-content: start;
+  }
+}
+
 .subnav_item {
   /* background-color: rgba(66, 128, 128, 0.205); */
   cursor: pointer;
