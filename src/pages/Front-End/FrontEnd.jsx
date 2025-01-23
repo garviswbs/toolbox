@@ -1,8 +1,17 @@
 // Ant Design
 import { Row, Col } from "antd";
 
-// Card Component
-import Card from "./Card.jsx";
+// React Router
+import { NavLink, Outlet } from "react-router";
+
+// Components
+// import All from "./All.jsx";
+// import HTML from "./HTML.jsx";
+// import CSS from "./CSS.jsx";
+// import JavaScript from "./JavaScript.jsx";
+
+// Card Component CSS
+import Card from "../Card.jsx";
 
 function FrontEnd() {
   return (
@@ -14,18 +23,18 @@ function FrontEnd() {
             <h1>Front-end</h1>
           </Col>
           <Col xs={24} sm={24} md={24} lg={15} xl={16} className="subnav_parent">
-            <div className="subnav_item">
+            <NavLink className="subnav_item" to="all">
+              <p>All</p>
+            </NavLink>
+            <NavLink className="subnav_item" to="./html">
               <p>HTML</p>
-            </div>
-            <div className="subnav_item">
+            </NavLink>
+            <NavLink className="subnav_item" to="./css">
               <p>CSS</p>
-            </div>
-            <div className="subnav_item">
+            </NavLink>
+            <NavLink className="subnav_item" to="./javascript">
               <p>JavaScript</p>
-            </div>
-            <div className="subnav_item">
-              <p>Test</p>
-            </div>
+            </NavLink>
           </Col>
         </Row>
       </div>
@@ -34,7 +43,18 @@ function FrontEnd() {
         {/* <h1 className="section_title" id="html">
           HTML
         </h1> */}
+
         <Row gutter={[20, 20]}>
+          <Outlet />
+          {/* <Routes>
+            <Route path=".//" element={<All />} />
+            <Route path="./html" element={<HTML />} />
+            <Route path="./css" element={<CSS />} />
+            <Route path="./javascript" element={<JavaScript />} />
+          </Routes> */}
+          {/* <Route path="/front-end/*" element={<FrontEnd />} /> */}
+
+          {/* <Card />
           <Card />
           <Card />
           <Card />
@@ -57,8 +77,7 @@ function FrontEnd() {
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
         </Row>
       </div>
     </>

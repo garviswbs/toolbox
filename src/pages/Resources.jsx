@@ -1,7 +1,7 @@
 // Ant Design
 import { Row, Col } from "antd";
 
-function Inspiration() {
+function Resources() {
   return (
     <>
       {/* Banner */}
@@ -30,4 +30,4 @@ function Inspiration() {
   );
 }
 
-export default Inspiration;
+export default Resources;

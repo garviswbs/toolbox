@@ -1,11 +1,16 @@
 import React from "react";
 // Pages
 import Home from "./pages/Home.jsx";
-import FrontEnd from "./pages/FrontEnd.jsx";
+// Front-End Pages
+import FrontEnd from "./pages/Front-End/FrontEnd.jsx";
+import HTML from "./pages/Front-End/HTML.jsx";
+import CSS from "./pages/Front-End/CSS.jsx";
+import JavaScript from "./pages/Front-End/JavaScript.jsx";
+// Back-End Pages
 import BackEnd from "./pages/BackEnd.jsx";
 import Design from "./pages/Design.jsx";
 import Testing from "./pages/Testing.jsx";
-import Inspiration from "./pages/Inspiration.jsx";
+import Resources from "./pages/Resources.jsx";
 import Info from "./pages/Info.jsx";
 
 // React Router
@@ -15,6 +20,14 @@ import githubIcon from "./assets/github-mark.png";
 
 import "./App.css";
 import "./pages/subpage.css";
+
+let pages = [
+  { page: "Front-end", link: "/front-end", subPages: ["HTML", "CSS", "JavaScript", "Test"] },
+  { page: "Back-end", link: "/back-end", subPages: ["Node.js", "Express", "MongoDB", "SQL"] },
+  { page: "Design", link: "/design", subPages: ["UI", "UX", "Color", "Images + Video", "Icons", "Fonts"] },
+  { page: "Testing", link: "/testing", subPages: ["Unit", "Integration", "End-to-End", "Performance"] },
+  { page: "Inspiration", link: "/inspiration", subPages: ["UI", "UX", "Color", "Images + Video", "Icons", "Fonts"] },
+];
 
 function App() {
   return (
@@ -61,11 +74,11 @@ function App() {
               <div className="nav_item_text">Testing</div>
             </NavLink>
             {/* Testing Link */}
-            <NavLink className="nav_item" to="/inspiration">
+            <NavLink className="nav_item" to="/resources">
               <div className="nav_item_icon">
                 <span className="material-icons-round">emoji_objects</span>
               </div>
-              <div className="nav_item_text">Inspiration</div>
+              <div className="nav_item_text">Resources</div>
             </NavLink>
           </div>
 
@@ -83,7 +96,7 @@ function App() {
             <div className="nav_item_icon">
               <span className="material-icons-round">info</span>
             </div>
-            <div className="nav_item_text">Info</div>
+            <div className="nav_item_text">Project Info</div>
           </NavLink>
         </div>
       </div>
@@ -162,12 +175,17 @@ function App() {
       <div className="main_content_parent">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/front-end/*" element={<FrontEnd />} />
-          <Route path="/back-end/*" element={<BackEnd />} />
-          <Route path="/design/*" element={<Design />} />
-          <Route path="/testing/*" element={<Testing />} />
-          <Route path="/inspiration/*" element={<Inspiration />} />
-          <Route path="/info/*" element={<Info />} />
+          <Route path="front-end" element={<FrontEnd />}>
+            {/* <Route path="all" element={<All />} /> */}
+            <Route path="html" element={<HTML />} />
+            <Route path="css" element={<CSS />} />
+            <Route path="javascript" element={<JavaScript />} />
+          </Route>
+          <Route path="/back-end" element={<BackEnd />} />
+          <Route path="/design" element={<Design />} />
+          <Route path="/testing" element={<Testing />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
       </div>
     </HashRouter>
