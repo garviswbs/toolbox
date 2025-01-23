@@ -4,12 +4,6 @@ import { Row, Col } from "antd";
 // React Router
 import { NavLink, Outlet } from "react-router";
 
-// Components
-// import All from "./All.jsx";
-// import HTML from "./HTML.jsx";
-// import CSS from "./CSS.jsx";
-// import JavaScript from "./JavaScript.jsx";
-
 // Card Component CSS
 import Card from "../Card.jsx";
 
@@ -23,16 +17,16 @@ function FrontEnd() {
             <h1>Front-end</h1>
           </Col>
           <Col xs={24} sm={24} md={24} lg={15} xl={16} className="subnav_parent">
-            <NavLink className="subnav_item" to="all">
+            {/* <NavLink className="subnav_item" to="all">
               <p>All</p>
-            </NavLink>
-            <NavLink className="subnav_item" to="./html">
+            </NavLink> */}
+            <NavLink className="subnav_item" to="html">
               <p>HTML</p>
             </NavLink>
-            <NavLink className="subnav_item" to="./css">
+            <NavLink className="subnav_item" to="css">
               <p>CSS</p>
             </NavLink>
-            <NavLink className="subnav_item" to="./javascript">
+            <NavLink className="subnav_item" to="javascript">
               <p>JavaScript</p>
             </NavLink>
           </Col>
