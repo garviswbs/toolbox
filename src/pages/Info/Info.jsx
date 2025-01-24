@@ -1,6 +1,8 @@
 // Ant Design
 import { Row, Col, Tooltip } from "antd";
 
+// Components
+
 // Css
 import "./Info.css";
 
