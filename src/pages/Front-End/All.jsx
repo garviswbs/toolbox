@@ -1,5 +1,5 @@
 // Card Components
-import Card from "../Card.jsx";
+import Card from "../Components/Card.jsx";
 
 function All() {
   return (

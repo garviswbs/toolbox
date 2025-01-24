@@ -31,7 +31,7 @@ function Info() {
           </Col>
         </Row>
       </div>
-      <p style={{ width: "50%", float: "right" }}>
+      <p style={{ width: "50%" }}>
         <strong>Toolbox</strong> is a project that aims to provide a collection of resources for developers and designers. The UI has been designed to mimick an integration dashboard with pages,
         subpages, and cards. The project is built using React, Vite, React Router, Material Symbols, styled-components, and Ant Design layout components. Each tile includes a link to the resource
         website. If applicable, a link to a personal sample page is also included.

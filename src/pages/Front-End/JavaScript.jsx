@@ -1,3 +1,6 @@
+// Ant Design
+import { Col, Row } from "antd";
+
 function JavaScript() {
   return (
     <div>

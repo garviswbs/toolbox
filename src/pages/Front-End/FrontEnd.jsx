@@ -1,14 +1,9 @@
-// Ant Design
-import { Row, Col } from "antd";
-
 // React Router
-import { NavLink, Outlet } from "react-router";
-
+import { Outlet } from "react-router";
+// Ant Design
+import { Row } from "antd";
 // SubNavBanner Component
 import SubNavBanner from "../Components/SubNavBanner.jsx";
-
-// Card Component CSS
-import Card from "../Card.jsx";
 
 function FrontEnd() {
   const links = [
@@ -20,12 +15,10 @@ function FrontEnd() {
   return (
     <>
       {/* Banner */}
-
       <SubNavBanner title="Front-end" links={links} />
+      {/* Content */}
       <div className="section_parent">
-        <Row gutter={[20, 20]}>
-          <Outlet />
-        </Row>
+        <Outlet />
       </div>
     </>
   );
