@@ -1,11 +1,30 @@
-// Ant Design
-import { Col, Row } from "antd";
+import Card from "../Components/Card";
 
 function JavaScript() {
   return (
-    <div>
-      <h1>JavaScript</h1>
-    </div>
+    <>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </>
   );
 }
 

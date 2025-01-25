@@ -15,10 +15,13 @@ function FrontEnd() {
   return (
     <>
       {/* Banner */}
-      <SubNavBanner title="Front-end" links={links} />
+      <SubNavBanner links={links} />
+
       {/* Content */}
       <div className="section_parent">
-        <Outlet />
+        <Row gutter={[20, 20]}>
+          <Outlet />
+        </Row>
       </div>
     </>
   );

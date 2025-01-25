@@ -4,9 +4,7 @@
   padding: 0 20px;
   box-sizing: border-box;
   border-bottom: 0.5px solid #69310020;
-  /* background-color: #f6eadb; */
   z-index: 1000;
-  /* background-blend-mode: lighten; */
   background: rgba(246, 234, 219, 0.75);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -19,6 +17,13 @@
   display: flex;
   align-items: center;
   /* background-color: white; */
+}
+
+.page_title_child {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #69310070;
+  color: #fff6eb;
+  letter-spacing: 1.5px;
 }
 
 .subnav_parent {
@@ -55,6 +60,9 @@
   opacity: 1;
   border-bottom: 2px solid #693100;
 }
+
+/* PAGE SECTION */
+
 .section_title {
   margin: 20px 0 10px 0;
 }
@@ -63,6 +71,7 @@
   padding: 20px;
 }
 
+/* CARD */
 .card_parent {
   background-color: #fff6eb;
   border-radius: 5px;

@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 
+/* Side Bar Navigation default state */
 .side_nav_parent {
   position: fixed;
   padding: 10px;
@@ -21,7 +22,7 @@ body {
   z-index: 10000;
 }
 
-/* Add width & box Shadow to nav on hover */
+/* Add width & box Shadow to Flyout Navbar on hover */
 .side_nav_parent:hover {
   width: 200px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -48,8 +49,8 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: stretch;
-  align-content: stretch;
+  /* align-items: stretch;
+  align-content: stretch; */
 }
 
 .nav_links_parent {
@@ -144,7 +145,7 @@ body {
   /* box-sizing: border-box; */
 }
 
-.nav_footer {
+/* .nav_footer {
   display: flex;
   color: #693100;
   overflow: hidden;
@@ -166,7 +167,7 @@ body {
 .nav_footer:hover {
   background-color: #f6eadb;
   opacity: 1;
-}
+} */
 
 /* Set all nav icon width */
 .material-icons-round {

@@ -1,8 +1,36 @@
+// Components
+import Card from "../Components/Card.jsx";
+import { Row } from "antd";
+
 function CSS() {
   return (
-    <div>
-      <h1>CSS</h1>
-    </div>
+    <>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </>
   );
 }
 
