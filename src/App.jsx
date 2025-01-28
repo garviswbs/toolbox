@@ -3,28 +3,22 @@ import React from "react";
 import { HashRouter, Routes, Route, NavLink, useLocation } from "react-router";
 // Home Page
 import Home from "./pages/Home.jsx";
-// Front-End Pages
-import FrontEnd from "./pages/Front-End/FrontEnd.jsx";
+// Page Layout
+import MainContent from "./Components/MainContent.jsx";
+// Landing Pages
 import FrontEndLanding from "./pages/Front-End/FrontEndLanding.jsx";
-import HTML from "./pages/Front-End/HTML.jsx";
-import CSS from "./pages/Front-End/CSS.jsx";
-import JavaScript from "./pages/Front-End/JavaScript.jsx";
-// Back-End Pages
-import BackEnd from "./pages/Back-End/BackEnd.jsx";
 import BackEndLanding from "./pages/Back-End/BackEndLanding.jsx";
-import NodeJS from "./pages/Back-End/NodeJS.jsx";
-import Database from "./pages/Back-End/Database.jsx";
-import Express from "./pages/Back-End/Express.jsx";
-
-import Design from "./pages/Design.jsx";
-import Testing from "./pages/Testing.jsx";
-import Resources from "./pages/Resources.jsx";
+import DesignLanding from "./pages/Design/DesignLanding.jsx";
+import TestingLanding from "./pages/Testing/TestingLanding.jsx";
+import ResourcesLanding from "./pages/Resources/ResourcesLanding.jsx";
+// Page
 import Info from "./pages/Info/Info.jsx";
+// Default Card Layout
+import CardLayout from "./Components/CardLayout.jsx";
 // Components
-import SubNavBanner from "./pages/Components/SubNavBanner.jsx";
+import SubNavBanner from "./Components/SubNavBanner.jsx";
 // Assets
 import githubIcon from "./assets/github-mark.png";
-
 // CSS
 import "./App.css";
 import "./pages/subpage.css";
@@ -38,18 +32,13 @@ function App() {
 }
 
 function AppContent() {
-  // useScrollToTop(); // Use the custom hook
-
   // React Router Use Location Hook to get the current URL
   const location = useLocation();
   // Split the URL path and get the parent path
   const parentPath = `/${location.pathname.split("/")[1]}`;
-  console.log(parentPath + "=PARENT PATH");
-
+  console.log("PARENT PATH = " + parentPath);
   // Get & Set banner properties based on the current location path
   const getBannerProps = () => {
-    // const parentPath = `/${location.pathname.split("/")[1]}`;
-    // console.log(parentPath + parentPath + parentPath + parentPath);
     switch (parentPath) {
       case "/front-end":
         return {
@@ -64,38 +53,59 @@ function AppContent() {
       case "/back-end":
         return {
           title: "Back-end",
+          parentPath: "back-end",
           links: [
-            { path: "nodejs", navLabel: "Node.js", headerLabel: "/Node.js" },
-            { path: "database", navLabel: "Database", headerLabel: "/Database" },
-            { path: "express", navLabel: "Express", headerLabel: "/Express" },
+            { path: "/nodejs", navLabel: "Node.js", headerLabel: "/Node.js" },
+            { path: "/database", navLabel: "Database", headerLabel: "/Database" },
+            { path: "/express", navLabel: "Express", headerLabel: "/Express" },
           ],
         };
       case "/design":
         return {
           title: "Design",
+          parentPath: "design",
           links: [
-            { path: "uiux", navLabel: "UI/UX", headerLabel: "/UI & UX" },
-            { path: "color", navLabel: "Color", headerLabel: "/Color" },
-            { path: "media", navLabel: "Media", headerLabel: "/Media" },
-            { path: "icons", navLabel: "Icons", headerLabel: "/Icons" },
-            { path: "inspo", navLabel: "Inspo", headerLabel: "/Inspo" },
+            { path: "/uiux", navLabel: "UI/UX", headerLabel: "/UI & UX" },
+            { path: "/color", navLabel: "Color", headerLabel: "/Color" },
+            { path: "/media", navLabel: "Media", headerLabel: "/Media" },
+            { path: "/icons", navLabel: "Icons", headerLabel: "/Icons" },
+            { path: "/inspo", navLabel: "Inspo", headerLabel: "/Inspo" },
           ],
         };
       case "/testing":
         return {
           title: "Testing",
+          parentPath: "testing",
           links: [
-            { path: "/validate", navLabel: "Validation", headerLabel: "/Validation" },
-            { path: "optimize", navLabel: "Optimize", headerLabel: "/Optimize" },
-            { path: "deploy", navLabel: "Deploy", headerLabel: "/Deploy" },
-            { path: "icons", navLabel: "Icons", headerLabel: "/Icons" },
+            { path: "/validate", navLabel: "Validate", headerLabel: "/Validate" },
+            { path: "/optimize", navLabel: "Optimize", headerLabel: "/Optimize" },
+            { path: "/deploy", navLabel: "Deploy", headerLabel: "/Deploy" },
           ],
+        };
+      case "/resources":
+        return {
+          title: "Resources",
+          parentPath: "resources",
+          links: [
+            { path: "/subpage1", navLabel: "Sub Page 1", headerLabel: "/Sub Page 1" },
+            { path: "/subpage2", navLabel: "Sub Page 2", headerLabel: "/Sub Page 2" },
+            { path: "/subpage3", navLabel: "Sub Page 3", headerLabel: "/Sub Page 3" },
+          ],
+        };
+      case "/":
+        return {
+          title: "Project Info",
+          parentPath: "project-info",
+          // links: [
+          //   { path: "/subpage1", navLabel: "Sub Page 1", headerLabel: "/Sub Page 1" },
+          //   { path: "/subpage2", navLabel: "Sub Page 2", headerLabel: "/Sub Page 2" },
+          //   { path: "/subpage3", navLabel: "Sub Page 3", headerLabel: "/Sub Page 3" },
+          // ],
         };
       default:
         return null;
     }
   };
-
   // Get the banner properties based on the current location path.
   const bannerProps = getBannerProps();
 
@@ -110,7 +120,6 @@ function AppContent() {
             </div>
             <div className="header_item_text">TOOLBOX</div>
           </NavLink>
-
           {/* LINKS - MIDDLE */}
           <div className="nav_links_parent">
             {/* Front-End Link */}
@@ -120,7 +129,6 @@ function AppContent() {
               </div>
               <div className="nav_item_text">Front-end</div>
             </NavLink>
-
             {/* Back-End Link */}
             <NavLink className="nav_item" to="/back-end">
               <div className="nav_item_icon">
@@ -151,7 +159,7 @@ function AppContent() {
             </NavLink>
           </div>
           {/* Project Info Link / Footer Link */}
-          <NavLink className="nav_item" to="/info">
+          <NavLink className="nav_item" to="/project-info">
             <div className="nav_item_icon">
               <span className="material-icons-round">info</span>
             </div>
@@ -164,61 +172,42 @@ function AppContent() {
         {bannerProps && <SubNavBanner {...bannerProps} />} {/* Conditionally render the SubNavBanner */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="front-end" element={<FrontEnd />}>
+          <Route path="front-end" element={<MainContent />}>
             <Route index element={<FrontEndLanding />} />
-            <Route path="html" element={<HTML />} />
-            <Route path="css" element={<CSS />} />
-            <Route path="javascript" element={<JavaScript />} />
+            <Route path="html" element={<CardLayout cardLayoutTitle="HTML Content" />} />
+            <Route path="css" element={<CardLayout cardLayoutTitle="CSS Content" />} />
+            <Route path="javascript" element={<CardLayout cardLayoutTitle="Javascript Content" />} />
           </Route>
-          <Route path="/back-end" element={<BackEnd />}>
+          <Route path="back-end" element={<MainContent />}>
             <Route index element={<BackEndLanding />} />
-            <Route path="nodejs" element={<NodeJS />} />
-            <Route path="database" element={<Database />} />
-            <Route path="express" element={<Express />} />
+            <Route path="nodejs" element={<CardLayout cardLayoutTitle="Node Content" />} />
+            <Route path="database" element={<CardLayout cardLayoutTitle="DB Content" />} />
+            <Route path="express" element={<CardLayout cardLayoutTitle="Express Content" />} />
           </Route>
-
-          <Route path="/design" element={<Design />} />
-          <Route path="/testing" element={<Testing />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/info" element={<Info />} />
+          <Route path="design" element={<MainContent />}>
+            <Route index element={<DesignLanding />} />
+            <Route path="uiux" element={<CardLayout cardLayoutTitle="UI/UX Content" />} />
+            <Route path="color" element={<CardLayout cardLayoutTitle="Color Content" />} />
+            <Route path="media" element={<CardLayout cardLayoutTitle="Media Content" />} />
+            <Route path="icons" element={<CardLayout cardLayoutTitle="Icons Content" />} />
+            <Route path="inspo" element={<CardLayout cardLayoutTitle="Inspo Content" />} />
+          </Route>
+          <Route path="testing" element={<MainContent />}>
+            <Route index element={<TestingLanding />} />
+            <Route path="validate" element={<CardLayout cardLayoutTitle="Testing Content" />} />
+            <Route path="optimize" element={<CardLayout cardLayoutTitle="Optimize Content" />} />
+            <Route path="deploy" element={<CardLayout cardLayoutTitle="Deploy Content" />} />
+          </Route>
+          <Route path="resources" element={<MainContent />}>
+            <Route index element={<ResourcesLanding />} />
+            <Route path="subpage1" element={<CardLayout cardLayoutTitle="Sub Page 1 Content" />} />
+            <Route path="subpage2" element={<CardLayout cardLayoutTitle="Sub Page 2 Content" />} />
+            <Route path="subpage3" element={<CardLayout cardLayoutTitle="Sub Page 3 Content" />} />
+          </Route>
+          <Route path="project-info" element={<Info />} />
         </Routes>
       </div>
     </>
   );
 }
-
 export default App;
-
-// function AppContent() {
-// useLocation hook from react-router-dom
-// const location = useLocation();
-// console.log(location.pathname + "test");
-
-// Get & Set banner properties based on the current location path
-// const getBannerProps = () => {
-//   switch (location.pathname) {
-//     case "/front-end":
-//       return {
-//         title: "Front-end",
-//         links: [
-//           { path: "html", navLabel: "HTML", headerLabel: "/HTML" },
-//           { path: "css", navLabel: "CSS", headerLabel: "/CSS" },
-//           { path: "javascript", navLabel: "JavaScript", headerLabel: "/JavaScript" },
-//         ],
-//       };
-//     case "/back-end":
-//       return {
-//         title: "Back-end",
-//         links: [
-//           { path: "subpage1", navLabel: "Subpage 1", headerLabel: "/Subpage 1" },
-//           { path: "subpage2", navLabel: "Subpage 2", headerLabel: "/Subpage 2" },
-//           { path: "subpage3", navLabel: "Subpage 3", headerLabel: "/Subpage 3" },
-//         ],
-//       };
-//     default:
-//       return null;
-//   }
-// };
-
-// // Get the banner properties based on the current location path.
-// const bannerProps = getBannerProps();

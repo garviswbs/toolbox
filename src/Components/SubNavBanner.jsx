@@ -4,6 +4,7 @@ import { Row, Col } from "antd";
 import { NavLink, useLocation } from "react-router";
 
 function SubNavBanner({ title, parentPath, links }) {
+  // console.log("IMPORTED LOCATION" + location);
   // Get current pathname
   const location = useLocation();
   // Split pathname into and array and get parent and child page name
@@ -11,12 +12,12 @@ function SubNavBanner({ title, parentPath, links }) {
   // Conditionally render parent page name.  Default to "home" if it doesn't exist.
   const parentPage = pathSegments[0] || "home";
   // Conditionally render child page name and add a slash if it exists.  Empty if it doesn't.
-  const childPage = pathSegments[1] ? " / " + pathSegments[1] : "";
+  const childPath = pathSegments[1] ? " / " + pathSegments[1] : "";
 
-  console.log("Pathname:", location.pathname);
-  console.log("Path Segments:", pathSegments);
-  console.log("Parent Page:", parentPage);
-  console.log("Child Page:", childPage);
+  // console.log("Pathname:", location.pathname);
+  // console.log("Path Segments:", pathSegments);
+  // console.log("Parent Page:", parentPage);
+  // console.log("Child Page:", childPath);
 
   // Scroll to top when subnav link is clicked
   const handleLinkClick = () => {
@@ -29,7 +30,7 @@ function SubNavBanner({ title, parentPath, links }) {
         <Col xs={24} sm={24} md={24} lg={11} xl={8} className="page_title_parent">
           <h1>
             {title}
-            <span className="page_title_child">{childPage}</span>
+            <span className="page_title_child">{childPath}</span>
           </h1>
         </Col>
         <Col xs={24} sm={24} md={24} lg={13} xl={16} className="subnav_parent">

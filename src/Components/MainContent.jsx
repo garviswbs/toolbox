@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 // Ant Design
 import { Row } from "antd";
 
-function FrontEnd() {
+function MainContent() {
   return (
     <>
       {/* Content */}
@@ -16,4 +16,4 @@ function FrontEnd() {
   );
 }
 
-export default FrontEnd;
+export default MainContent;

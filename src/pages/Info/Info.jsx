@@ -10,7 +10,7 @@ function Info() {
   return (
     <>
       {/* Banner */}
-      <div className="banner_parent">
+      {/* <div className="banner_parent">
         <Row gutter={[20, 0]} style={{ minHeight: "75px" }}>
           <Col xs={24} sm={24} md={24} lg={9} xl={8} className="page_title_parent">
             <h1>Project Info</h1>
@@ -30,7 +30,7 @@ function Info() {
             </div>
           </Col>
         </Row>
-      </div>
+      </div> */}
       <p style={{ width: "50%" }}>
         <strong>Toolbox</strong> is a project that aims to provide a collection of resources for developers and designers. The UI has been designed to mimick an integration dashboard with pages,
         subpages, and cards. The project is built using React, Vite, React Router, Material Symbols, styled-components, and Ant Design layout components. Each tile includes a link to the resource

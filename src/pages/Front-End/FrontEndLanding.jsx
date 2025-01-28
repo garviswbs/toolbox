@@ -1,5 +1,5 @@
 // Card Components
-import Card from "../Components/Card.jsx";
+import Card from "../../Components/Card.jsx";
 
 function FrontEndLanding() {
   return <>front end landing page</>;
