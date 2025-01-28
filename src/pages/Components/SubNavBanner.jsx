@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 // React Router
 import { NavLink, useLocation } from "react-router";
 
-function SubNavBanner({ title, links }) {
+function SubNavBanner({ title, parentPath, links }) {
   // Get current pathname
   const location = useLocation();
   // Split pathname into and array and get parent and child page name
@@ -28,13 +28,13 @@ function SubNavBanner({ title, links }) {
       <Row gutter={[20, 0]} style={{ minHeight: "75px" }}>
         <Col xs={24} sm={24} md={24} lg={11} xl={8} className="page_title_parent">
           <h1>
-            {parentPage}
+            {title}
             <span className="page_title_child">{childPage}</span>
           </h1>
         </Col>
         <Col xs={24} sm={24} md={24} lg={13} xl={16} className="subnav_parent">
           {links.map((link, index) => (
-            <NavLink onClick={() => handleLinkClick()} key={index} className="subnav_item" to={link.path}>
+            <NavLink onClick={() => handleLinkClick()} key={index} className="subnav_item" to={parentPath + link.path}>
               <p>{link.navLabel}</p>
             </NavLink>
           ))}

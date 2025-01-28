@@ -6,16 +6,16 @@ import { Row } from "antd";
 import SubNavBanner from "../Components/SubNavBanner.jsx";
 
 function FrontEnd() {
-  const links = [
-    { path: "html", navLabel: "HTML" },
-    { path: "css", navLabel: "CSS" },
-    { path: "javascript", navLabel: "JavaScript" },
-  ];
+  // const links = [
+  //   { path: "html", navLabel: "HTML" },
+  //   { path: "css", navLabel: "CSS" },
+  //   { path: "javascript", navLabel: "JavaScript" },
+  // ];
 
   return (
     <>
       {/* Banner */}
-      <SubNavBanner links={links} />
+      {/* <SubNavBanner links={links} /> */}
 
       {/* Content */}
       <div className="section_parent">

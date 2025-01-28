@@ -30,13 +30,77 @@ import "./App.css";
 import "./pages/subpage.css";
 
 function App() {
-  const links = [
-    { path: "html", navLabel: "HTML" },
-    { path: "css", navLabel: "CSS" },
-    { path: "javascript", navLabel: "JavaScript" },
-  ];
   return (
     <HashRouter>
+      <AppContent />
+    </HashRouter>
+  );
+}
+
+function AppContent() {
+  // useScrollToTop(); // Use the custom hook
+
+  // React Router Use Location Hook to get the current URL
+  const location = useLocation();
+  // Split the URL path and get the parent path
+  const parentPath = `/${location.pathname.split("/")[1]}`;
+  console.log(parentPath + "=PARENT PATH");
+
+  // Get & Set banner properties based on the current location path
+  const getBannerProps = () => {
+    // const parentPath = `/${location.pathname.split("/")[1]}`;
+    // console.log(parentPath + parentPath + parentPath + parentPath);
+    switch (parentPath) {
+      case "/front-end":
+        return {
+          title: "Front-end",
+          parentPath: "front-end",
+          links: [
+            { path: "/html", navLabel: "HTML", headerLabel: "/HTML" },
+            { path: "/css", navLabel: "CSS", headerLabel: "/CSS" },
+            { path: "/javascript", navLabel: "JavaScript", headerLabel: "/JavaScript" },
+          ],
+        };
+      case "/back-end":
+        return {
+          title: "Back-end",
+          links: [
+            { path: "nodejs", navLabel: "Node.js", headerLabel: "/Node.js" },
+            { path: "database", navLabel: "Database", headerLabel: "/Database" },
+            { path: "express", navLabel: "Express", headerLabel: "/Express" },
+          ],
+        };
+      case "/design":
+        return {
+          title: "Design",
+          links: [
+            { path: "uiux", navLabel: "UI/UX", headerLabel: "/UI & UX" },
+            { path: "color", navLabel: "Color", headerLabel: "/Color" },
+            { path: "media", navLabel: "Media", headerLabel: "/Media" },
+            { path: "icons", navLabel: "Icons", headerLabel: "/Icons" },
+            { path: "inspo", navLabel: "Inspo", headerLabel: "/Inspo" },
+          ],
+        };
+      case "/testing":
+        return {
+          title: "Testing",
+          links: [
+            { path: "/validate", navLabel: "Validation", headerLabel: "/Validation" },
+            { path: "optimize", navLabel: "Optimize", headerLabel: "/Optimize" },
+            { path: "deploy", navLabel: "Deploy", headerLabel: "/Deploy" },
+            { path: "icons", navLabel: "Icons", headerLabel: "/Icons" },
+          ],
+        };
+      default:
+        return null;
+    }
+  };
+
+  // Get the banner properties based on the current location path.
+  const bannerProps = getBannerProps();
+
+  return (
+    <>
       <div className="side_nav_parent">
         <div className="side_nav_content">
           {/* TITLE & Site Icon- TOP */}
@@ -95,9 +159,9 @@ function App() {
           </NavLink>
         </div>
       </div>
-
       {/* CONTENT */}
       <div className="main_content_parent">
+        {bannerProps && <SubNavBanner {...bannerProps} />} {/* Conditionally render the SubNavBanner */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="front-end" element={<FrontEnd />}>
@@ -119,7 +183,7 @@ function App() {
           <Route path="/info" element={<Info />} />
         </Routes>
       </div>
-    </HashRouter>
+    </>
   );
 }
 
