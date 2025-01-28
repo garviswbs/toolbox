@@ -12,6 +12,10 @@ import JavaScript from "./pages/Front-End/JavaScript.jsx";
 // Back-End Pages
 import BackEnd from "./pages/Back-End/BackEnd.jsx";
 import BackEndLanding from "./pages/Back-End/BackEndLanding.jsx";
+import NodeJS from "./pages/Back-End/NodeJS.jsx";
+import Database from "./pages/Back-End/Database.jsx";
+import Express from "./pages/Back-End/Express.jsx";
+
 import Design from "./pages/Design.jsx";
 import Testing from "./pages/Testing.jsx";
 import Resources from "./pages/Resources.jsx";
@@ -26,6 +30,11 @@ import "./App.css";
 import "./pages/subpage.css";
 
 function App() {
+  const links = [
+    { path: "html", navLabel: "HTML" },
+    { path: "css", navLabel: "CSS" },
+    { path: "javascript", navLabel: "JavaScript" },
+  ];
   return (
     <HashRouter>
       <div className="side_nav_parent">
@@ -49,12 +58,12 @@ function App() {
             </NavLink>
 
             {/* Back-End Link */}
-            {/* <NavLink className="nav_item" to="/back-end">
+            <NavLink className="nav_item" to="/back-end">
               <div className="nav_item_icon">
                 <span className="material-icons-round">dns</span>
               </div>
               <div className="nav_item_text">Back-end</div>
-            </NavLink> */}
+            </NavLink>
             {/* Design Link */}
             <NavLink className="nav_item" to="/design">
               <div className="nav_item_icon">
@@ -99,6 +108,9 @@ function App() {
           </Route>
           <Route path="/back-end" element={<BackEnd />}>
             <Route index element={<BackEndLanding />} />
+            <Route path="nodejs" element={<NodeJS />} />
+            <Route path="database" element={<Database />} />
+            <Route path="express" element={<Express />} />
           </Route>
 
           <Route path="/design" element={<Design />} />

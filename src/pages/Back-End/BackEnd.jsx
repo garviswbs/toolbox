@@ -1,33 +1,27 @@
-import { Col, Row } from "antd";
+// React Router
+import { Outlet } from "react-router";
+// Ant Design
+import { Row } from "antd";
+// SubNavBanner Component
+import SubNavBanner from "../Components/SubNavBanner.jsx";
 
 function BackEnd() {
+  const links = [
+    { path: "nodejs", navLabel: "Node.JS" },
+    { path: "database", navLabel: "DB" },
+    { path: "express", navLabel: "Express" },
+  ];
+
   return (
     <>
       {/* Banner */}
-      <div className="banner_parent">
-        <Row gutter={[20, 0]} style={{ minHeight: "75px" }}>
-          <Col xs={24} sm={24} md={24} lg={9} xl={8} className="page_title_parent">
-            <h1>Back-end</h1>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={15} xl={16} className="subnav_parent">
-            <div className="subnav_item">
-              <p>HTML</p>
-            </div>
-            <div className="subnav_item">
-              <p>CSS</p>
-            </div>
-            <div className="subnav_item">
-              <p>JavaScript</p>
-            </div>
-            <div className="subnav_item">
-              <p>Test</p>
-            </div>
-          </Col>
+      <SubNavBanner links={links} />
+
+      {/* Content */}
+      <div className="section_parent">
+        <Row gutter={[20, 20]}>
+          <Outlet />
         </Row>
-      </div>
-      <div>
-        <h1>BACK END BACK END BACK END BACK END</h1>
-        <p> Welcome to the Home Page</p>
       </div>
     </>
   );

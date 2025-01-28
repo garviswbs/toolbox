@@ -14,6 +14,7 @@ function SubNavBanner({ title, links }) {
   const childPage = pathSegments[1] ? " / " + pathSegments[1] : "";
 
   console.log("Pathname:", location.pathname);
+  console.log("Path Segments:", pathSegments);
   console.log("Parent Page:", parentPage);
   console.log("Child Page:", childPage);
 
@@ -28,7 +29,7 @@ function SubNavBanner({ title, links }) {
         <Col xs={24} sm={24} md={24} lg={11} xl={8} className="page_title_parent">
           <h1>
             {parentPage}
-            <span class="page_title_child">{childPage}</span>
+            <span className="page_title_child">{childPage}</span>
           </h1>
         </Col>
         <Col xs={24} sm={24} md={24} lg={13} xl={16} className="subnav_parent">
