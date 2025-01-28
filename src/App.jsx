@@ -92,10 +92,11 @@ function AppContent() {
             { path: "/subpage3", navLabel: "Sub Page 3", headerLabel: "/Sub Page 3" },
           ],
         };
-      case "/":
+      case "/project-info":
         return {
           title: "Project Info",
           parentPath: "project-info",
+          links: [],
           // links: [
           //   { path: "/subpage1", navLabel: "Sub Page 1", headerLabel: "/Sub Page 1" },
           //   { path: "/subpage2", navLabel: "Sub Page 2", headerLabel: "/Sub Page 2" },
