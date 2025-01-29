@@ -3,23 +3,17 @@ import React from "react";
 import { HashRouter, Routes, Route, NavLink, useLocation } from "react-router";
 // Home Page
 import Home from "./pages/Home.jsx";
+// Components
+import SubNavBanner from "./Components/SubNavBanner.jsx";
 // Page Layout
 import MainContent from "./Components/MainContent.jsx";
-// Landing Pages
-import FrontEndLanding from "./pages/Front-End/FrontEndLanding.jsx";
-import BackEndLanding from "./pages/Back-End/BackEndLanding.jsx";
-import DesignLanding from "./pages/Design/DesignLanding.jsx";
-import TestingLanding from "./pages/Testing/TestingLanding.jsx";
-import ResourcesLanding from "./pages/Resources/ResourcesLanding.jsx";
+// Default Card Layout
+import CardLayout from "./Components/CardLayout.jsx";
+// Landing Page
+import LandingPage from "./pages/LandingPage.jsx";
 import NotFound from "./pages/NotFound.jsx";
 // Page
 import Info from "./pages/Info/Info.jsx";
-// Default Card Layout
-import CardLayout from "./Components/CardLayout.jsx";
-// Components
-import SubNavBanner from "./Components/SubNavBanner.jsx";
-// Assets
-import githubIcon from "./assets/github-mark.png";
 // CSS
 import "./App.css";
 import "./pages/subpage.css";
@@ -175,19 +169,19 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="front-end" element={<MainContent />}>
-            <Route index element={<FrontEndLanding />} />
+            <Route index element={<LandingPage landingPageTitle="Front-End" />} />
             <Route path="html" element={<CardLayout cardLayoutTitle="HTML Content" />} />
             <Route path="css" element={<CardLayout cardLayoutTitle="CSS Content" />} />
             <Route path="javascript" element={<CardLayout cardLayoutTitle="Javascript Content" />} />
           </Route>
           <Route path="back-end" element={<MainContent />}>
-            <Route index element={<BackEndLanding />} />
+            <Route index element={<LandingPage landingPageTitle="Back-End" />} />
             <Route path="nodejs" element={<CardLayout cardLayoutTitle="Node Content" />} />
             <Route path="database" element={<CardLayout cardLayoutTitle="DB Content" />} />
             <Route path="express" element={<CardLayout cardLayoutTitle="Express Content" />} />
           </Route>
           <Route path="design" element={<MainContent />}>
-            <Route index element={<DesignLanding />} />
+            <Route index element={<LandingPage landingPageTitle="Design" />} />
             <Route path="uiux" element={<CardLayout cardLayoutTitle="UI/UX Content" />} />
             <Route path="color" element={<CardLayout cardLayoutTitle="Color Content" />} />
             <Route path="media" element={<CardLayout cardLayoutTitle="Media Content" />} />
@@ -195,13 +189,13 @@ function AppContent() {
             <Route path="inspo" element={<CardLayout cardLayoutTitle="Inspo Content" />} />
           </Route>
           <Route path="testing" element={<MainContent />}>
-            <Route index element={<TestingLanding />} />
+            <Route index element={<LandingPage landingPageTitle="Testing" />} />
             <Route path="validate" element={<CardLayout cardLayoutTitle="Testing Content" />} />
             <Route path="optimize" element={<CardLayout cardLayoutTitle="Optimize Content" />} />
             <Route path="deploy" element={<CardLayout cardLayoutTitle="Deploy Content" />} />
           </Route>
           <Route path="resources" element={<MainContent />}>
-            <Route index element={<ResourcesLanding />} />
+            <Route index element={<LandingPage landingPageTitle="Resources" />} />
             <Route path="subpage1" element={<CardLayout cardLayoutTitle="Sub Page 1 Content" />} />
             <Route path="subpage2" element={<CardLayout cardLayoutTitle="Sub Page 2 Content" />} />
             <Route path="subpage3" element={<CardLayout cardLayoutTitle="Sub Page 3 Content" />} />
