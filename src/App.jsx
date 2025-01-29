@@ -11,6 +11,7 @@ import BackEndLanding from "./pages/Back-End/BackEndLanding.jsx";
 import DesignLanding from "./pages/Design/DesignLanding.jsx";
 import TestingLanding from "./pages/Testing/TestingLanding.jsx";
 import ResourcesLanding from "./pages/Resources/ResourcesLanding.jsx";
+import NotFound from "./pages/NotFound.jsx";
 // Page
 import Info from "./pages/Info/Info.jsx";
 // Default Card Layout
@@ -206,6 +207,8 @@ function AppContent() {
             <Route path="subpage3" element={<CardLayout cardLayoutTitle="Sub Page 3 Content" />} />
           </Route>
           <Route path="project-info" element={<Info />} />
+          {/* 404 Page */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </>
