@@ -11,6 +11,8 @@ function SubNavBanner({ title, parentPath, links }) {
   const pathSegments = location.pathname.split("/").filter(Boolean);
   // Conditionally render parent page name.  Default to "home" if it doesn't exist.
   const parentPage = pathSegments[0] || "home";
+  // const parentPage = parentPath || "home";
+
   // Conditionally render child page name and add a slash if it exists.  Empty if it doesn't.
   const childPath = pathSegments[1] ? " / " + pathSegments[1] : "";
 

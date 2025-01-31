@@ -178,16 +178,16 @@ function AppContent() {
           <Route path="design" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Design" />} />
             <Route path="uiux" element={<CardLayout subPageQuery="UI/UX" />} />
-            <Route path="color" element={<CardLayout subPageQuery="Color Content" />} />
-            <Route path="media" element={<CardLayout subPageQuery="Media Content" />} />
-            <Route path="icons" element={<CardLayout subPageQuery="Icons Content" />} />
-            <Route path="inspo" element={<CardLayout subPageQuery="Inspo Content" />} />
+            <Route path="color" element={<CardLayout subPageQuery="Color" />} />
+            <Route path="media" element={<CardLayout subPageQuery="Media" />} />
+            <Route path="icons" element={<CardLayout subPageQuery="Icons" />} />
+            <Route path="inspo" element={<CardLayout subPageQuery="Inspo" />} />
           </Route>
           <Route path="testing" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Testing" />} />
-            <Route path="validate" element={<CardLayout subPageQuery="Testing Content" />} />
-            <Route path="optimize" element={<CardLayout subPageQuery="Optimize Content" />} />
-            <Route path="deploy" element={<CardLayout subPageQuery="Deploy Content" />} />
+            <Route path="validate" element={<CardLayout subPageQuery="Validate" />} />
+            <Route path="optimize" element={<CardLayout subPageQuery="Optimize" />} />
+            <Route path="deploy" element={<CardLayout subPageQuery="Deploy" />} />
           </Route>
           <Route path="resources" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Resources" />} />
