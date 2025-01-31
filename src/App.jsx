@@ -52,7 +52,7 @@ function AppContent() {
           links: [
             { path: "/nodejs", navLabel: "Node.js", headerLabel: "/Node.js" },
             { path: "/database", navLabel: "Database", headerLabel: "/Database" },
-            { path: "/express", navLabel: "Express", headerLabel: "/Express" },
+            { path: "/api", navLabel: "API", headerLabel: "/API" },
           ],
         };
       case "/design":
@@ -92,11 +92,6 @@ function AppContent() {
           title: "Project Info",
           parentPath: "project-info",
           links: [],
-          // links: [
-          //   { path: "/subpage1", navLabel: "Sub Page 1", headerLabel: "/Sub Page 1" },
-          //   { path: "/subpage2", navLabel: "Sub Page 2", headerLabel: "/Sub Page 2" },
-          //   { path: "/subpage3", navLabel: "Sub Page 3", headerLabel: "/Sub Page 3" },
-          // ],
         };
       default:
         return null;
@@ -170,35 +165,35 @@ function AppContent() {
           <Route path="/" element={<Home />} />
           <Route path="front-end" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Front-End" />} />
-            <Route path="html" element={<CardLayout cardLayoutTitle="HTML Content" />} />
-            <Route path="css" element={<CardLayout cardLayoutTitle="CSS Content" />} />
-            <Route path="javascript" element={<CardLayout cardLayoutTitle="Javascript Content" />} />
+            <Route path="html" element={<CardLayout subPageQuery="HTML" />} />
+            <Route path="css" element={<CardLayout subPageQuery="CSS" />} />
+            <Route path="javascript" element={<CardLayout subPageQuery="JavaScript" />} />
           </Route>
           <Route path="back-end" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Back-End" />} />
-            <Route path="nodejs" element={<CardLayout cardLayoutTitle="Node Content" />} />
-            <Route path="database" element={<CardLayout cardLayoutTitle="DB Content" />} />
-            <Route path="express" element={<CardLayout cardLayoutTitle="Express Content" />} />
+            <Route path="nodejs" element={<CardLayout subPageQuery="Node.js" />} />
+            <Route path="database" element={<CardLayout subPageQuery="Database" />} />
+            <Route path="api" element={<CardLayout subPageQuery="API" />} />
           </Route>
           <Route path="design" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Design" />} />
-            <Route path="uiux" element={<CardLayout cardLayoutTitle="UI/UX Content" />} />
-            <Route path="color" element={<CardLayout cardLayoutTitle="Color Content" />} />
-            <Route path="media" element={<CardLayout cardLayoutTitle="Media Content" />} />
-            <Route path="icons" element={<CardLayout cardLayoutTitle="Icons Content" />} />
-            <Route path="inspo" element={<CardLayout cardLayoutTitle="Inspo Content" />} />
+            <Route path="uiux" element={<CardLayout subPageQuery="UI/UX" />} />
+            <Route path="color" element={<CardLayout subPageQuery="Color Content" />} />
+            <Route path="media" element={<CardLayout subPageQuery="Media Content" />} />
+            <Route path="icons" element={<CardLayout subPageQuery="Icons Content" />} />
+            <Route path="inspo" element={<CardLayout subPageQuery="Inspo Content" />} />
           </Route>
           <Route path="testing" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Testing" />} />
-            <Route path="validate" element={<CardLayout cardLayoutTitle="Testing Content" />} />
-            <Route path="optimize" element={<CardLayout cardLayoutTitle="Optimize Content" />} />
-            <Route path="deploy" element={<CardLayout cardLayoutTitle="Deploy Content" />} />
+            <Route path="validate" element={<CardLayout subPageQuery="Testing Content" />} />
+            <Route path="optimize" element={<CardLayout subPageQuery="Optimize Content" />} />
+            <Route path="deploy" element={<CardLayout subPageQuery="Deploy Content" />} />
           </Route>
           <Route path="resources" element={<MainContent />}>
             <Route index element={<LandingPage landingPageTitle="Resources" />} />
-            <Route path="subpage1" element={<CardLayout cardLayoutTitle="Sub Page 1 Content" />} />
-            <Route path="subpage2" element={<CardLayout cardLayoutTitle="Sub Page 2 Content" />} />
-            <Route path="subpage3" element={<CardLayout cardLayoutTitle="Sub Page 3 Content" />} />
+            <Route path="subpage1" element={<CardLayout subPageQuery="Sub Page 1 Content" />} />
+            <Route path="subpage2" element={<CardLayout subPageQuery="Sub Page 2 Content" />} />
+            <Route path="subpage3" element={<CardLayout subPageQuery="Sub Page 3 Content" />} />
           </Route>
           <Route path="project-info" element={<Info />} />
           {/* 404 Page */}

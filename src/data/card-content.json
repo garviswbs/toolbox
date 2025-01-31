@@ -1,38 +1,1262 @@
 [
   {
-    "title": "Title Here",
-    "page": "Frontend",
-    "category": "HTML",
+    "title": "HTML Basics",
+    "page": "Front-end",
+    "subPage": "HTML",
     "icon": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "websiteLink": "",
-    "sampleLink": ""
+    "description": "Learn the basics of HTML.",
+    "websiteLink": "https://www.example.com/html-basics",
+    "sampleLink": "https://www.example.com/html-basics-sample"
   },
   {
-    "title": "Title Here",
-    "page": "Frontend",
-    "category": "HTML",
+    "title": "HTML Forms",
+    "page": "Front-end",
+    "subPage": "HTML",
     "icon": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "websiteLink": "",
-    "sampleLink": ""
+    "description": "Understand how to create and use HTML forms.",
+    "websiteLink": "https://www.example.com/html-forms",
+    "sampleLink": "https://www.example.com/html-forms-sample"
   },
   {
-    "title": "Title Here",
-    "page": "Frontend",
-    "category": "HTML",
+    "title": "HTML5 New Features",
+    "page": "Front-end",
+    "subPage": "HTML",
     "icon": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "websiteLink": "",
-    "sampleLink": ""
+    "description": "Explore the new features in HTML5.",
+    "websiteLink": "https://www.example.com/html5-features",
+    "sampleLink": "https://www.example.com/html5-features-sample"
   },
   {
-    "title": "Title Here",
-    "page": "Frontend",
-    "category": "HTML",
+    "title": "HTML Tables",
+    "page": "Front-end",
+    "subPage": "HTML",
     "icon": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "websiteLink": "",
-    "sampleLink": ""
+    "description": "Learn how to create and style HTML tables.",
+    "websiteLink": "https://www.example.com/html-tables",
+    "sampleLink": "https://www.example.com/html-tables-sample"
+  },
+  {
+    "title": "HTML Lists",
+    "page": "Front-end",
+    "subPage": "HTML",
+    "icon": "",
+    "description": "Understand how to create ordered and unordered lists in HTML.",
+    "websiteLink": "https://www.example.com/html-lists",
+    "sampleLink": "https://www.example.com/html-lists-sample"
+  },
+  {
+    "title": "HTML Semantic Elements",
+    "page": "Front-end",
+    "subPage": "HTML",
+    "icon": "",
+    "description": "Learn about semantic elements in HTML.",
+    "websiteLink": "https://www.example.com/html-semantic",
+    "sampleLink": "https://www.example.com/html-semantic-sample"
+  },
+  {
+    "title": "HTML Media",
+    "page": "Front-end",
+    "subPage": "HTML",
+    "icon": "",
+    "description": "Discover how to embed media in HTML.",
+    "websiteLink": "https://www.example.com/html-media",
+    "sampleLink": "https://www.example.com/html-media-sample"
+  },
+  {
+    "title": "HTML Links",
+    "page": "Front-end",
+    "subPage": "HTML",
+    "icon": "",
+    "description": "Learn how to create and style links in HTML.",
+    "websiteLink": "https://www.example.com/html-links",
+    "sampleLink": "https://www.example.com/html-links-sample"
+  },
+  {
+    "title": "HTML Attributes",
+    "page": "Front-end",
+    "subPage": "HTML",
+    "icon": "",
+    "description": "Understand the use of attributes in HTML.",
+    "websiteLink": "https://www.example.com/html-attributes",
+    "sampleLink": "https://www.example.com/html-attributes-sample"
+  },
+  {
+    "title": "HTML Block and Inline Elements",
+    "page": "Front-end",
+    "subPage": "HTML",
+    "icon": "",
+    "description": "Learn the difference between block and inline elements in HTML.",
+    "websiteLink": "https://www.example.com/html-block-inline",
+    "sampleLink": "https://www.example.com/html-block-inline-sample"
+  },
+  {
+    "title": "CSS Basics",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Learn the basics of CSS.",
+    "websiteLink": "https://www.example.com/css-basics",
+    "sampleLink": "https://www.example.com/css-basics-sample"
+  },
+  {
+    "title": "CSS Flexbox",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Understand how to use CSS Flexbox for layout.",
+    "websiteLink": "https://www.example.com/css-flexbox",
+    "sampleLink": "https://www.example.com/css-flexbox-sample"
+  },
+  {
+    "title": "CSS Grid",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Explore the CSS Grid layout system.",
+    "websiteLink": "https://www.example.com/css-grid",
+    "sampleLink": "https://www.example.com/css-grid-sample"
+  },
+  {
+    "title": "CSS Animations",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Learn how to create animations with CSS.",
+    "websiteLink": "https://www.example.com/css-animations",
+    "sampleLink": "https://www.example.com/css-animations-sample"
+  },
+  {
+    "title": "CSS Transitions",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Understand how to use CSS transitions.",
+    "websiteLink": "https://www.example.com/css-transitions",
+    "sampleLink": "https://www.example.com/css-transitions-sample"
+  },
+  {
+    "title": "CSS Variables",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Learn about CSS variables and how to use them.",
+    "websiteLink": "https://www.example.com/css-variables",
+    "sampleLink": "https://www.example.com/css-variables-sample"
+  },
+  {
+    "title": "CSS Selectors",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Discover the different types of CSS selectors.",
+    "websiteLink": "https://www.example.com/css-selectors",
+    "sampleLink": "https://www.example.com/css-selectors-sample"
+  },
+  {
+    "title": "CSS Specificity",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Understand CSS specificity and how it affects styles.",
+    "websiteLink": "https://www.example.com/css-specificity",
+    "sampleLink": "https://www.example.com/css-specificity-sample"
+  },
+  {
+    "title": "CSS Positioning",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Learn about different CSS positioning techniques.",
+    "websiteLink": "https://www.example.com/css-positioning",
+    "sampleLink": "https://www.example.com/css-positioning-sample"
+  },
+  {
+    "title": "CSS Media Queries",
+    "page": "Front-end",
+    "subPage": "CSS",
+    "icon": "",
+    "description": "Explore how to use CSS media queries for responsive design.",
+    "websiteLink": "https://www.example.com/css-media-queries",
+    "sampleLink": "https://www.example.com/css-media-queries-sample"
+  },
+  {
+    "title": "JavaScript Basics",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Learn the basics of JavaScript.",
+    "websiteLink": "https://www.example.com/js-basics",
+    "sampleLink": "https://www.example.com/js-basics-sample"
+  },
+  {
+    "title": "JavaScript Functions",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Understand how to create and use functions in JavaScript.",
+    "websiteLink": "https://www.example.com/js-functions",
+    "sampleLink": "https://www.example.com/js-functions-sample"
+  },
+  {
+    "title": "JavaScript Objects",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Learn about objects in JavaScript.",
+    "websiteLink": "https://www.example.com/js-objects",
+    "sampleLink": "https://www.example.com/js-objects-sample"
+  },
+  {
+    "title": "JavaScript Arrays",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Explore arrays and their methods in JavaScript.",
+    "websiteLink": "https://www.example.com/js-arrays",
+    "sampleLink": "https://www.example.com/js-arrays-sample"
+  },
+  {
+    "title": "JavaScript Promises",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Understand how to work with promises in JavaScript.",
+    "websiteLink": "https://www.example.com/js-promises",
+    "sampleLink": "https://www.example.com/js-promises-sample"
+  },
+  {
+    "title": "JavaScript Async/Await",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Learn about async/await syntax in JavaScript.",
+    "websiteLink": "https://www.example.com/js-async-await",
+    "sampleLink": "https://www.example.com/js-async-await-sample"
+  },
+  {
+    "title": "JavaScript DOM Manipulation",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Discover how to manipulate the DOM using JavaScript.",
+    "websiteLink": "https://www.example.com/js-dom",
+    "sampleLink": "https://www.example.com/js-dom-sample"
+  },
+  {
+    "title": "JavaScript Events",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Learn about handling events in JavaScript.",
+    "websiteLink": "https://www.example.com/js-events",
+    "sampleLink": "https://www.example.com/js-events-sample"
+  },
+  {
+    "title": "JavaScript ES6 Features",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Explore new features introduced in ES6.",
+    "websiteLink": "https://www.example.com/js-es6",
+    "sampleLink": "https://www.example.com/js-es6-sample"
+  },
+  {
+    "title": "JavaScript Error Handling",
+    "page": "Front-end",
+    "subPage": "JavaScript",
+    "icon": "",
+    "description": "Understand how to handle errors in JavaScript.",
+    "websiteLink": "https://www.example.com/js-error-handling",
+    "sampleLink": "https://www.example.com/js-error-handling-sample"
+  },
+  {
+    "title": "Node.js Basics",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Learn the basics of Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-basics",
+    "sampleLink": "https://www.example.com/nodejs-basics-sample"
+  },
+  {
+    "title": "Node.js Modules",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Understand how to use modules in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-modules",
+    "sampleLink": "https://www.example.com/nodejs-modules-sample"
+  },
+  {
+    "title": "Node.js File System",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Learn about the file system module in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-file-system",
+    "sampleLink": "https://www.example.com/nodejs-file-system-sample"
+  },
+  {
+    "title": "Node.js HTTP Module",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Explore the HTTP module in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-http",
+    "sampleLink": "https://www.example.com/nodejs-http-sample"
+  },
+  {
+    "title": "Node.js Express",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Learn how to use Express with Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-express",
+    "sampleLink": "https://www.example.com/nodejs-express-sample"
+  },
+  {
+    "title": "Node.js Middleware",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Understand middleware in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-middleware",
+    "sampleLink": "https://www.example.com/nodejs-middleware-sample"
+  },
+  {
+    "title": "Node.js REST API",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Learn how to create a REST API with Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-rest-api",
+    "sampleLink": "https://www.example.com/nodejs-rest-api-sample"
+  },
+  {
+    "title": "Node.js Authentication",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Explore authentication techniques in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-authentication",
+    "sampleLink": "https://www.example.com/nodejs-authentication-sample"
+  },
+  {
+    "title": "Node.js Error Handling",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Understand error handling in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-error-handling",
+    "sampleLink": "https://www.example.com/nodejs-error-handling-sample"
+  },
+  {
+    "title": "Node.js Testing",
+    "page": "Back-end",
+    "subPage": "Node.js",
+    "icon": "",
+    "description": "Learn about testing in Node.js.",
+    "websiteLink": "https://www.example.com/nodejs-testing",
+    "sampleLink": "https://www.example.com/nodejs-testing-sample"
+  },
+  {
+    "title": "SQL Basics",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Learn the basics of SQL.",
+    "websiteLink": "https://www.example.com/sql-basics",
+    "sampleLink": "https://www.example.com/sql-basics-sample"
+  },
+  {
+    "title": "NoSQL Databases",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Understand the fundamentals of NoSQL databases.",
+    "websiteLink": "https://www.example.com/nosql-databases",
+    "sampleLink": "https://www.example.com/nosql-databases-sample"
+  },
+  {
+    "title": "Database Design",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Learn about designing efficient databases.",
+    "websiteLink": "https://www.example.com/database-design",
+    "sampleLink": "https://www.example.com/database-design-sample"
+  },
+  {
+    "title": "Database Indexing",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Explore the concepts of database indexing.",
+    "websiteLink": "https://www.example.com/database-indexing",
+    "sampleLink": "https://www.example.com/database-indexing-sample"
+  },
+  {
+    "title": "Database Transactions",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Understand how to manage database transactions.",
+    "websiteLink": "https://www.example.com/database-transactions",
+    "sampleLink": "https://www.example.com/database-transactions-sample"
+  },
+  {
+    "title": "Database Security",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Learn about securing databases.",
+    "websiteLink": "https://www.example.com/database-security",
+    "sampleLink": "https://www.example.com/database-security-sample"
+  },
+  {
+    "title": "Database Backup and Recovery",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Discover techniques for database backup and recovery.",
+    "websiteLink": "https://www.example.com/database-backup-recovery",
+    "sampleLink": "https://www.example.com/database-backup-recovery-sample"
+  },
+  {
+    "title": "Database Performance Tuning",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Learn how to optimize database performance.",
+    "websiteLink": "https://www.example.com/database-performance-tuning",
+    "sampleLink": "https://www.example.com/database-performance-tuning-sample"
+  },
+  {
+    "title": "Database Replication",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Understand the concepts of database replication.",
+    "websiteLink": "https://www.example.com/database-replication",
+    "sampleLink": "https://www.example.com/database-replication-sample"
+  },
+  {
+    "title": "Database Sharding",
+    "page": "Back-end",
+    "subPage": "Database",
+    "icon": "",
+    "description": "Learn about database sharding techniques.",
+    "websiteLink": "https://www.example.com/database-sharding",
+    "sampleLink": "https://www.example.com/database-sharding-sample"
+  },
+  {
+    "title": "REST API Basics",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Learn the basics of REST APIs.",
+    "websiteLink": "https://www.example.com/rest-api-basics",
+    "sampleLink": "https://www.example.com/rest-api-basics-sample"
+  },
+  {
+    "title": "GraphQL Introduction",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Understand the fundamentals of GraphQL.",
+    "websiteLink": "https://www.example.com/graphql-introduction",
+    "sampleLink": "https://www.example.com/graphql-introduction-sample"
+  },
+  {
+    "title": "API Authentication",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Learn about different API authentication methods.",
+    "websiteLink": "https://www.example.com/api-authentication",
+    "sampleLink": "https://www.example.com/api-authentication-sample"
+  },
+  {
+    "title": "API Rate Limiting",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Explore techniques for API rate limiting.",
+    "websiteLink": "https://www.example.com/api-rate-limiting",
+    "sampleLink": "https://www.example.com/api-rate-limiting-sample"
+  },
+  {
+    "title": "API Versioning",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Understand how to version your APIs.",
+    "websiteLink": "https://www.example.com/api-versioning",
+    "sampleLink": "https://www.example.com/api-versioning-sample"
+  },
+  {
+    "title": "API Documentation",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Learn how to create comprehensive API documentation.",
+    "websiteLink": "https://www.example.com/api-documentation",
+    "sampleLink": "https://www.example.com/api-documentation-sample"
+  },
+  {
+    "title": "API Testing",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Discover tools and techniques for API testing.",
+    "websiteLink": "https://www.example.com/api-testing",
+    "sampleLink": "https://www.example.com/api-testing-sample"
+  },
+  {
+    "title": "API Caching",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Learn about caching strategies for APIs.",
+    "websiteLink": "https://www.example.com/api-caching",
+    "sampleLink": "https://www.example.com/api-caching-sample"
+  },
+  {
+    "title": "API Security",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Understand how to secure your APIs.",
+    "websiteLink": "https://www.example.com/api-security",
+    "sampleLink": "https://www.example.com/api-security-sample"
+  },
+  {
+    "title": "API Gateway",
+    "page": "Back-end",
+    "subPage": "API",
+    "icon": "",
+    "description": "Explore the use of API gateways.",
+    "websiteLink": "https://www.example.com/api-gateway",
+    "sampleLink": "https://www.example.com/api-gateway-sample"
+  },
+  {
+    "title": "UI/UX Basics",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Learn the basics of UI/UX design.",
+    "websiteLink": "https://www.example.com/uiux-basics",
+    "sampleLink": "https://www.example.com/uiux-basics-sample"
+  },
+  {
+    "title": "User Research",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Understand the importance of user research.",
+    "websiteLink": "https://www.example.com/user-research",
+    "sampleLink": "https://www.example.com/user-research-sample"
+  },
+  {
+    "title": "Wireframing",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Learn how to create wireframes.",
+    "websiteLink": "https://www.example.com/wireframing",
+    "sampleLink": "https://www.example.com/wireframing-sample"
+  },
+  {
+    "title": "Prototyping",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Explore prototyping techniques.",
+    "websiteLink": "https://www.example.com/prototyping",
+    "sampleLink": "https://www.example.com/prototyping-sample"
+  },
+  {
+    "title": "Usability Testing",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Understand how to conduct usability testing.",
+    "websiteLink": "https://www.example.com/usability-testing",
+    "sampleLink": "https://www.example.com/usability-testing-sample"
+  },
+  {
+    "title": "Interaction Design",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Learn about interaction design principles.",
+    "websiteLink": "https://www.example.com/interaction-design",
+    "sampleLink": "https://www.example.com/interaction-design-sample"
+  },
+  {
+    "title": "User Interface Design",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Explore user interface design techniques.",
+    "websiteLink": "https://www.example.com/ui-design",
+    "sampleLink": "https://www.example.com/ui-design-sample"
+  },
+  {
+    "title": "User Experience Design",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Understand user experience design.",
+    "websiteLink": "https://www.example.com/ux-design",
+    "sampleLink": "https://www.example.com/ux-design-sample"
+  },
+  {
+    "title": "Accessibility",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Learn about accessibility in design.",
+    "websiteLink": "https://www.example.com/accessibility",
+    "sampleLink": "https://www.example.com/accessibility-sample"
+  },
+  {
+    "title": "Design Systems",
+    "page": "Design",
+    "subPage": "UI/UX",
+    "icon": "",
+    "description": "Explore the creation of design systems.",
+    "websiteLink": "https://www.example.com/design-systems",
+    "sampleLink": "https://www.example.com/design-systems-sample"
+  },
+  {
+    "title": "Color Theory",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Learn the basics of color theory.",
+    "websiteLink": "https://www.example.com/color-theory",
+    "sampleLink": "https://www.example.com/color-theory-sample"
+  },
+  {
+    "title": "Color Palettes",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Understand how to create color palettes.",
+    "websiteLink": "https://www.example.com/color-palettes",
+    "sampleLink": "https://www.example.com/color-palettes-sample"
+  },
+  {
+    "title": "Color Psychology",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Explore the psychology of colors.",
+    "websiteLink": "https://www.example.com/color-psychology",
+    "sampleLink": "https://www.example.com/color-psychology-sample"
+  },
+  {
+    "title": "Color Accessibility",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Learn about color accessibility.",
+    "websiteLink": "https://www.example.com/color-accessibility",
+    "sampleLink": "https://www.example.com/color-accessibility-sample"
+  },
+  {
+    "title": "Color Trends",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Understand current color trends.",
+    "websiteLink": "https://www.example.com/color-trends",
+    "sampleLink": "https://www.example.com/color-trends-sample"
+  },
+  {
+    "title": "Color Tools",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Discover tools for working with colors.",
+    "websiteLink": "https://www.example.com/color-tools",
+    "sampleLink": "https://www.example.com/color-tools-sample"
+  },
+  {
+    "title": "Color Combinations",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Learn about effective color combinations.",
+    "websiteLink": "https://www.example.com/color-combinations",
+    "sampleLink": "https://www.example.com/color-combinations-sample"
+  },
+  {
+    "title": "Color in Branding",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Explore the use of color in branding.",
+    "websiteLink": "https://www.example.com/color-branding",
+    "sampleLink": "https://www.example.com/color-branding-sample"
+  },
+  {
+    "title": "Color in Web Design",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Understand the use of color in web design.",
+    "websiteLink": "https://www.example.com/color-web-design",
+    "sampleLink": "https://www.example.com/color-web-design-sample"
+  },
+  {
+    "title": "Color Gradients",
+    "page": "Design",
+    "subPage": "Color",
+    "icon": "",
+    "description": "Learn about creating color gradients.",
+    "websiteLink": "https://www.example.com/color-gradients",
+    "sampleLink": "https://www.example.com/color-gradients-sample"
+  },
+  {
+    "title": "Image Optimization",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Learn how to optimize images for the web.",
+    "websiteLink": "https://www.example.com/image-optimization",
+    "sampleLink": "https://www.example.com/image-optimization-sample"
+  },
+  {
+    "title": "Video Integration",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Understand how to integrate videos into your design.",
+    "websiteLink": "https://www.example.com/video-integration",
+    "sampleLink": "https://www.example.com/video-integration-sample"
+  },
+  {
+    "title": "Responsive Media",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Explore techniques for responsive media.",
+    "websiteLink": "https://www.example.com/responsive-media",
+    "sampleLink": "https://www.example.com/responsive-media-sample"
+  },
+  {
+    "title": "Media Queries",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Learn about using media queries in design.",
+    "websiteLink": "https://www.example.com/media-queries",
+    "sampleLink": "https://www.example.com/media-queries-sample"
+  },
+  {
+    "title": "SVG Graphics",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Understand the use of SVG graphics.",
+    "websiteLink": "https://www.example.com/svg-graphics",
+    "sampleLink": "https://www.example.com/svg-graphics-sample"
+  },
+  {
+    "title": "Audio Integration",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Learn how to integrate audio into your design.",
+    "websiteLink": "https://www.example.com/audio-integration",
+    "sampleLink": "https://www.example.com/audio-integration-sample"
+  },
+  {
+    "title": "Media Accessibility",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Explore accessibility considerations for media.",
+    "websiteLink": "https://www.example.com/media-accessibility",
+    "sampleLink": "https://www.example.com/media-accessibility-sample"
+  },
+  {
+    "title": "Media Formats",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Understand different media formats and their uses.",
+    "websiteLink": "https://www.example.com/media-formats",
+    "sampleLink": "https://www.example.com/media-formats-sample"
+  },
+  {
+    "title": "Media Compression",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Learn about media compression techniques.",
+    "websiteLink": "https://www.example.com/media-compression",
+    "sampleLink": "https://www.example.com/media-compression-sample"
+  },
+  {
+    "title": "Media Management",
+    "page": "Design",
+    "subPage": "Media",
+    "icon": "",
+    "description": "Discover best practices for media management.",
+    "websiteLink": "https://www.example.com/media-management",
+    "sampleLink": "https://www.example.com/media-management-sample"
+  },
+  {
+    "title": "Icon Design Basics",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Learn the basics of icon design.",
+    "websiteLink": "https://www.example.com/icon-design-basics",
+    "sampleLink": "https://www.example.com/icon-design-basics-sample"
+  },
+  {
+    "title": "SVG Icons",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Understand how to create and use SVG icons.",
+    "websiteLink": "https://www.example.com/svg-icons",
+    "sampleLink": "https://www.example.com/svg-icons-sample"
+  },
+  {
+    "title": "Icon Libraries",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Explore popular icon libraries.",
+    "websiteLink": "https://www.example.com/icon-libraries",
+    "sampleLink": "https://www.example.com/icon-libraries-sample"
+  },
+  {
+    "title": "Custom Icons",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Learn how to create custom icons.",
+    "websiteLink": "https://www.example.com/custom-icons",
+    "sampleLink": "https://www.example.com/custom-icons-sample"
+  },
+  {
+    "title": "Icon Accessibility",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Understand accessibility considerations for icons.",
+    "websiteLink": "https://www.example.com/icon-accessibility",
+    "sampleLink": "https://www.example.com/icon-accessibility-sample"
+  },
+  {
+    "title": "Icon Fonts",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Learn about using icon fonts.",
+    "websiteLink": "https://www.example.com/icon-fonts",
+    "sampleLink": "https://www.example.com/icon-fonts-sample"
+  },
+  {
+    "title": "Icon Sets",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Explore different icon sets.",
+    "websiteLink": "https://www.example.com/icon-sets",
+    "sampleLink": "https://www.example.com/icon-sets-sample"
+  },
+  {
+    "title": "Icon Usage",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Learn best practices for using icons.",
+    "websiteLink": "https://www.example.com/icon-usage",
+    "sampleLink": "https://www.example.com/icon-usage-sample"
+  },
+  {
+    "title": "Icon Animation",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Discover techniques for animating icons.",
+    "websiteLink": "https://www.example.com/icon-animation",
+    "sampleLink": "https://www.example.com/icon-animation-sample"
+  },
+  {
+    "title": "Icon Trends",
+    "page": "Design",
+    "subPage": "Icons",
+    "icon": "",
+    "description": "Stay updated with the latest icon design trends.",
+    "websiteLink": "https://www.example.com/icon-trends",
+    "sampleLink": "https://www.example.com/icon-trends-sample"
+  },
+  {
+    "title": "Design Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Find inspiration for your design projects.",
+    "websiteLink": "https://www.example.com/design-inspiration",
+    "sampleLink": "https://www.example.com/design-inspiration-sample"
+  },
+  {
+    "title": "UI Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Explore inspiring UI designs.",
+    "websiteLink": "https://www.example.com/ui-inspiration",
+    "sampleLink": "https://www.example.com/ui-inspiration-sample"
+  },
+  {
+    "title": "UX Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Discover inspiring UX designs.",
+    "websiteLink": "https://www.example.com/ux-inspiration",
+    "sampleLink": "https://www.example.com/ux-inspiration-sample"
+  },
+  {
+    "title": "Color Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Find inspiration for color schemes.",
+    "websiteLink": "https://www.example.com/color-inspiration",
+    "sampleLink": "https://www.example.com/color-inspiration-sample"
+  },
+  {
+    "title": "Typography Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Explore inspiring typography designs.",
+    "websiteLink": "https://www.example.com/typography-inspiration",
+    "sampleLink": "https://www.example.com/typography-inspiration-sample"
+  },
+  {
+    "title": "Layout Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Discover inspiring layout designs.",
+    "websiteLink": "https://www.example.com/layout-inspiration",
+    "sampleLink": "https://www.example.com/layout-inspiration-sample"
+  },
+  {
+    "title": "Animation Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Find inspiration for animations.",
+    "websiteLink": "https://www.example.com/animation-inspiration",
+    "sampleLink": "https://www.example.com/animation-inspiration-sample"
+  },
+  {
+    "title": "Icon Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Explore inspiring icon designs.",
+    "websiteLink": "https://www.example.com/icon-inspiration",
+    "sampleLink": "https://www.example.com/icon-inspiration-sample"
+  },
+  {
+    "title": "Web Design Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Discover inspiring web designs.",
+    "websiteLink": "https://www.example.com/web-design-inspiration",
+    "sampleLink": "https://www.example.com/web-design-inspiration-sample"
+  },
+  {
+    "title": "Graphic Design Inspiration",
+    "page": "Design",
+    "subPage": "Inspo",
+    "icon": "",
+    "description": "Find inspiration for graphic design projects.",
+    "websiteLink": "https://www.example.com/graphic-design-inspiration",
+    "sampleLink": "https://www.example.com/graphic-design-inspiration-sample"
+  },
+  {
+    "title": "Unit Testing Basics",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Learn the basics of unit testing.",
+    "websiteLink": "https://www.example.com/unit-testing-basics",
+    "sampleLink": "https://www.example.com/unit-testing-basics-sample"
+  },
+  {
+    "title": "Integration Testing",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Understand how to perform integration testing.",
+    "websiteLink": "https://www.example.com/integration-testing",
+    "sampleLink": "https://www.example.com/integration-testing-sample"
+  },
+  {
+    "title": "End-to-End Testing",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Learn about end-to-end testing techniques.",
+    "websiteLink": "https://www.example.com/end-to-end-testing",
+    "sampleLink": "https://www.example.com/end-to-end-testing-sample"
+  },
+  {
+    "title": "Test Automation",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Explore test automation tools and practices.",
+    "websiteLink": "https://www.example.com/test-automation",
+    "sampleLink": "https://www.example.com/test-automation-sample"
+  },
+  {
+    "title": "Mocking and Stubbing",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Understand mocking and stubbing in tests.",
+    "websiteLink": "https://www.example.com/mocking-stubbing",
+    "sampleLink": "https://www.example.com/mocking-stubbing-sample"
+  },
+  {
+    "title": "Test-Driven Development",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Learn about test-driven development (TDD).",
+    "websiteLink": "https://www.example.com/tdd",
+    "sampleLink": "https://www.example.com/tdd-sample"
+  },
+  {
+    "title": "Behavior-Driven Development",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Explore behavior-driven development (BDD).",
+    "websiteLink": "https://www.example.com/bdd",
+    "sampleLink": "https://www.example.com/bdd-sample"
+  },
+  {
+    "title": "Code Coverage",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Understand the importance of code coverage.",
+    "websiteLink": "https://www.example.com/code-coverage",
+    "sampleLink": "https://www.example.com/code-coverage-sample"
+  },
+  {
+    "title": "Continuous Integration",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Learn about continuous integration (CI) practices.",
+    "websiteLink": "https://www.example.com/continuous-integration",
+    "sampleLink": "https://www.example.com/continuous-integration-sample"
+  },
+  {
+    "title": "Regression Testing",
+    "page": "Testing",
+    "subPage": "Validate",
+    "icon": "",
+    "description": "Explore regression testing techniques.",
+    "websiteLink": "https://www.example.com/regression-testing",
+    "sampleLink": "https://www.example.com/regression-testing-sample"
+  },
+  {
+    "title": "Performance Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Learn the basics of performance testing.",
+    "websiteLink": "https://www.example.com/performance-testing",
+    "sampleLink": "https://www.example.com/performance-testing-sample"
+  },
+  {
+    "title": "Load Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Understand how to perform load testing.",
+    "websiteLink": "https://www.example.com/load-testing",
+    "sampleLink": "https://www.example.com/load-testing-sample"
+  },
+  {
+    "title": "Stress Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Learn about stress testing techniques.",
+    "websiteLink": "https://www.example.com/stress-testing",
+    "sampleLink": "https://www.example.com/stress-testing-sample"
+  },
+  {
+    "title": "Scalability Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Explore scalability testing practices.",
+    "websiteLink": "https://www.example.com/scalability-testing",
+    "sampleLink": "https://www.example.com/scalability-testing-sample"
+  },
+  {
+    "title": "Security Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Understand the importance of security testing.",
+    "websiteLink": "https://www.example.com/security-testing",
+    "sampleLink": "https://www.example.com/security-testing-sample"
+  },
+  {
+    "title": "Usability Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Learn about usability testing techniques.",
+    "websiteLink": "https://www.example.com/usability-testing",
+    "sampleLink": "https://www.example.com/usability-testing-sample"
+  },
+  {
+    "title": "Compatibility Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Explore compatibility testing practices.",
+    "websiteLink": "https://www.example.com/compatibility-testing",
+    "sampleLink": "https://www.example.com/compatibility-testing-sample"
+  },
+  {
+    "title": "Database Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Understand how to perform database testing.",
+    "websiteLink": "https://www.example.com/database-testing",
+    "sampleLink": "https://www.example.com/database-testing-sample"
+  },
+  {
+    "title": "API Testing",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Learn about API testing techniques.",
+    "websiteLink": "https://www.example.com/api-testing",
+    "sampleLink": "https://www.example.com/api-testing-sample"
+  },
+  {
+    "title": "Optimization Tools",
+    "page": "Testing",
+    "subPage": "Optimize",
+    "icon": "",
+    "description": "Discover tools for optimizing performance.",
+    "websiteLink": "https://www.example.com/optimization-tools",
+    "sampleLink": "https://www.example.com/optimization-tools-sample"
+  },
+  {
+    "title": "Deployment Basics",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Learn the basics of deployment.",
+    "websiteLink": "https://www.example.com/deployment-basics",
+    "sampleLink": "https://www.example.com/deployment-basics-sample"
+  },
+  {
+    "title": "Continuous Deployment",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Understand continuous deployment practices.",
+    "websiteLink": "https://www.example.com/continuous-deployment",
+    "sampleLink": "https://www.example.com/continuous-deployment-sample"
+  },
+  {
+    "title": "Deployment Automation",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Learn about deployment automation tools.",
+    "websiteLink": "https://www.example.com/deployment-automation",
+    "sampleLink": "https://www.example.com/deployment-automation-sample"
+  },
+  {
+    "title": "Rollback Strategies",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Explore strategies for rolling back deployments.",
+    "websiteLink": "https://www.example.com/rollback-strategies",
+    "sampleLink": "https://www.example.com/rollback-strategies-sample"
+  },
+  {
+    "title": "Blue-Green Deployment",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Understand blue-green deployment techniques.",
+    "websiteLink": "https://www.example.com/blue-green-deployment",
+    "sampleLink": "https://www.example.com/blue-green-deployment-sample"
+  },
+  {
+    "title": "Canary Releases",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Learn about canary release strategies.",
+    "websiteLink": "https://www.example.com/canary-releases",
+    "sampleLink": "https://www.example.com/canary-releases-sample"
+  },
+  {
+    "title": "Infrastructure as Code",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Explore infrastructure as code (IaC) practices.",
+    "websiteLink": "https://www.example.com/infrastructure-as-code",
+    "sampleLink": "https://www.example.com/infrastructure-as-code-sample"
+  },
+  {
+    "title": "Serverless Deployment",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Understand serverless deployment techniques.",
+    "websiteLink": "https://www.example.com/serverless-deployment",
+    "sampleLink": "https://www.example.com/serverless-deployment-sample"
+  },
+  {
+    "title": "Deployment Pipelines",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Learn about creating deployment pipelines.",
+    "websiteLink": "https://www.example.com/deployment-pipelines",
+    "sampleLink": "https://www.example.com/deployment-pipelines-sample"
+  },
+  {
+    "title": "Deployment Monitoring",
+    "page": "Testing",
+    "subPage": "Deploy",
+    "icon": "",
+    "description": "Discover tools and techniques for monitoring deployments.",
+    "websiteLink": "https://www.example.com/deployment-monitoring",
+    "sampleLink": "https://www.example.com/deployment-monitoring-sample"
   }
 ]
