@@ -3,10 +3,6 @@
 function Home() {
   return (
     <div>
-      <div className="banner_parent">
-        <h1>HomeHomeHomeHome </h1>
-        <p> Welcome to the Home Page</p>
-      </div>
       <div className="subnav_parent">test</div>
       <p>
         Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisi id facilisis cubilia est primis. Asit nisl facilisis nulla elit elementum sociosqu sodales magna. Lobortis accumsan in aliquet
